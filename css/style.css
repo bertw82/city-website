@@ -1,0 +1,222 @@
+/* Web Fonts -------------------- */
+
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lemonada', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5.625rem;
+  Color: darkblue;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1.3;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+p {
+  font-family: 'Montserrat', serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.arrow {
+  max-width: 20%;
+  margin-top: 100px;
+}
+
+.indy500 {
+    height: 277px;
+    width: 229px;
+}
+
+.monument {
+   margin-top: 20px;
+   margin-bottom: 46px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+  padding: 0;
+}
+
+/*
+li {
+  margin-bottom: 10px;
+}
+*/
+
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+/*
+a:visited {
+  color: lightblue;
+}
+*/
+
+a:hover {
+  color: rgba(255, 169, 73, .4);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 120px;
+  height: 850px;
+  background: linear-gradient(cornflowerblue, transparent 90%),
+              linear-gradient(45deg, #fff, transparent),
+              lightblue url('../images/city.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  margin: auto;
+  font-size: 1.625rem;
+  font-weight: 200;
+  letter-spacing: .065em;
+  border-bottom: 2px dashed;
+  padding-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: darkblue;
+}
+
+.menu li {
+  color: white;
+  align-items: center;
+  list-style: none;
+  border-radius: 10px
+  font-size: 1.625rem;
+}
+
+.menu a {
+  color: white;
+  font-size: 2em;
+  padding: 10px 10px;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 0;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+   font: normal 1.5em/1.5 Arial;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid darkblue;
+}
+
+.t-border {
+    border-top: 2px solid grey;
+  }
+  
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  margin: 30px auto;
+  max-width: 960px;
+  padding: 30px 50px;
+}
+
+.parks {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid darkblue;
+  margin: 60px 20px;
+  background: url('../images/parks.jpg') no-repeat center;
+  background-size: cover;
+}
+
+
+/* Float Clearfix ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+ 
+}
+  
+.resorts {
+  float: left;
+  }
+  
+.tips {
+  float: right;
+  }
+  
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries -------------------- */

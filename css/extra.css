@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0
+  font-family: 'Lemonada', cursive;
+}
+
+h1 {
+  color: firebrick;
+  font-size: 4rem;
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  margin: auto;
+}
+
+h2 {
+  color: firebrick;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:link {
+  color: forestgreen;
+}
+
+a:active {
+  color: tomato;
+}
+
+.intro {
+  font-size: 1.625rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
