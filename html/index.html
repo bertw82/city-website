@@ -8,79 +8,125 @@
   </head>
   <body>
     <header id="top" class="main-header">
-      <span class="title">Circle City: a City on the Move!</span>
-      <h1>Indianapolis, Indiana</h1>
+      <h1>Welcome to Indianapolis!</h1>
       <div>
         <ul class="menu">
           <li><a href="#top">Home</a></li>
-          <li><a href="Indy.html" target="_blank">Info</a></li>
-          <li><a href="#circle">Sports and Parks</a></li>
+          <li><a href="Indy.html">About</a></li>
+          <li><a href="#circle">What to Do</a></li>
+          <li><a href="#circle">Where to Stay</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <img class="arrow" src="images/arrow.svg">
     </header>
     
     <main>
-      <div class="primary-content t-border">
-        <p class="intro">Indianapolis is a major city located in central Indiana with a metro population of over two million people. Indianapolis is home to beautiful parks, a world class symphony orchestra, two major league sports franchises and the Indianapolis 500.
-        </p><br>
-        <a class="callout" href="Indy.html" target="_blank">Find Out More About Indy</a>
-        
-        <div class="parks" id="circle">
-          <h2>Check Out Indianapolis Parks</h2>
-          <p>Indianapolis has amazing public parks! Visit these parks on your next visit to Circle City: Highland Park, White River State Park, Martin Luther King Jr. Park, and Garfield Park</p>
-        </div>
-    
-        <a class="callout" href="../Parks.html" target="_blank">Learn more about Indy Parks</a>
+      <div class="primary t-border">
+        <img src="images/indy500.jpg" alt="racetrack" class="indy500">
+        <h2>About Indy</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
+          Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p><br>
+        <a class="callout" href="about.html" target="_blank">Find Out More About Indy</a>
       </div>
-      
-      <div class="secondary-content t-border group">
-        <div class="resorts">
-          <img src="images/indy500.jpg" alt="racetrack" class="indy500">
-          <h3>Indy Sports</h3>
-          <nav>
-            <ul>
-              <li>Colts</li>
-              <li>Pacers</li>
-              <li>Indy 500</li>
-              <li>Indy Fuel</li>
-              <li>Indy Indians</li>
-            </ul>
-          </nav>
-        </div>
-        
-        <div class="tips">
-          <img class="monument" src="images/monument.jpg" alt="Indianapolis monument">
-          <h3>Nightlife</h3>
-          <nav>
-          <ul>
-            <li>Mass Ave.</li>
-            <li>Wholesale District/Downtown</li>
-            <li>Broad Ripple</li>
-          </ul>
-          </nav>
-        </div>
-      </div>
-      
-      <aside id="contact">
-        <h3>Contact</h3>
-        <p>Contact the City of Indianapolis for more information:</p>
-        <p><a href="mailto:IndyInfo@gmail.com?subject=Hi%20There!">Send an Email</a></p>
-        <p>Write to:<br>
-          1234 E. Washington St.<br>
-          Indianapolis, IN<br>
-          46204
+      <hr>
 
-        </p>
-      </aside>
+      <div class="secondary t-border group">
+        <div class="events">
+          <img src="images/indy500.jpg" alt="racetrack" class="indy500">
+          <h2>What to Do</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
+            Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p>
+          <a class="callout" href="../activities.html" target="_blank">Learn more about activities in Indy</a>
+      </div>
+      <hr>
+
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
+          Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p>
+        <form action="index.html" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="user_email">
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="user_street">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+            <label for="city">State</label>
+            <select id="city" name="user_city">
+              <optgroup label="Choose State"></optgroup>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zip">
+          </fieldset>
+          <fieldset>
+            <legend>Brochures</legend>
+            <p>Select which brochures you would like to receive</p><br>
+            <label></label>
+          </fieldset>          
+        </form>    
+      </div>
+
     </main>
   
     <footer class="main-footer t-border">
-      <p>All Rights Reserved to the City of <a href="https://www.indy.gov/" target="_blank">Indianapolis</a><br>
-        &copy; 2020
-      </p>
+      <p>All Rights Reserved to the City of <a href="https://www.indy.gov/" target="_blank">Indianapolis</a>&copy; 2020</p>
+      <p><a href="mailto:IndyInfo@gmail.com?subject=Hi%20There!">IndyInfo@email.com</a></p>
+        <p>1234 E. Washington St. | Indianapolis, IN | 46204</p>
       <a href="#top">Back to top &Rarr;</a>
     </footer>
+    
   </body>
 </html>
