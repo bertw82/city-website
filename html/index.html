@@ -9,21 +9,20 @@
   <body>
     <header id="top" class="main-header">
       <h1>Welcome to Indianapolis!</h1>
+    </header>
       <div>
         <ul class="menu">
-          <li><a href="#top">Home</a></li>
           <li><a href="Indy.html">About</a></li>
           <li><a href="#circle">What to Do</a></li>
           <li><a href="#circle">Where to Stay</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </header>
-    
+
     <main>
       <div class="primary t-border">
-        <img src="images/indy500.jpg" alt="racetrack" class="indy500">
         <h2>About Indy</h2>
+        <img src="../images/statue.jpg" alt="racetrack" class="indy500">
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
           Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p><br>
         <a class="callout" href="about.html" target="_blank">Find Out More About Indy</a>
@@ -113,8 +112,15 @@
           </fieldset>
           <fieldset>
             <legend>Brochures</legend>
-            <p>Select which brochures you would like to receive</p><br>
-            <label></label>
+            <p>Select your interests</p><br>
+            <input type="checkbox" id="recreation" name="interests"><label for="recreation">Outdoor Recreation</label>
+            <input type="checkbox" id="arts" name="interests"><label for="arts">Performing Arts</label>
+            <input type="checkbox" id="sports" name="interests"><label for="sports">Outdoor Recreation</label>
+            <input type="checkbox" id="food_drink" name="interests"><label for="food_drink">Outdoor Recreation</label>
+            <legend>Brochure Format</legend>
+            <p>Select Brochure format</p><br>
+            <input type="checkbox" id="email" name="format"><label for="email">Email</label>
+            <input type="checkbox" id="mail" name="format"><label for="mail">Post</label>
           </fieldset>          
         </form>    
       </div>

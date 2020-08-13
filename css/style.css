@@ -10,13 +10,22 @@ body {
   color: #878787;
   margin: 0;
   padding: 0;
-  font-family: 'Lemonada', cursive;
+  font-family: 'Montserrat', serif;
   text-align: center;
 }
 
-h1 {
-  
+main {
+  margin: 0 auto;
+  width: 90%;
 }
+
+h1 {
+  margin: 0;
+  padding: 1em;
+  color: white;
+  text-shadow: 1px 3px 1px rgba(0,0,0,.4);
+}
+
 
 h2 {
   
@@ -27,11 +36,11 @@ h3 {
 }
 
 p {
-  font-family: 'Montserrat', serif;
+  
 }
 
 img {
-  
+  width: 100%;
 }
 
 .arrow {
@@ -81,8 +90,9 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-  
-  background: url('../images/city.jpg') no-repeat center;
+  height: 9em;
+  background: 
+  url('../images/city.jpg') no-repeat center;
   background-size: cover;
 }
 
@@ -95,6 +105,8 @@ a:active {
   display: flex;
   justify-content: space-around;
   background-color: darkblue;
+  padding: .625em 0 .625em 0;
+  margin-top: 0;
 }
 
 .menu li {
@@ -106,7 +118,7 @@ a:active {
 
 .menu a {
   color: white;
-  font-size: 2em;
+  font-size: ;
   padding: 10px 10px;
 }
 
