@@ -2,69 +2,82 @@
 <html lang="en">
   <head>
     <title>Indianapolis, Indiana</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
   <body>
-    <header id="top" class="main-header">
-      <h1>Welcome to Indianapolis!</h1>
-    </header>
-      <div>
+    <header id="home" class="main-header">
+      <nav>
         <ul class="menu">
-          <li><a href="Indy.html">About</a></li>
-          <li><a href="#circle">What to Do</a></li>
-          <li><a href="#circle">Where to Stay</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">To Do</a></li>
+          <li><a href="hotels.html">Hotels</a></li>
+          <li><a href="subscribe.html">Subscribe</a></li>
         </ul>
+      </nav>
+    </header>
+
+      <div class="banner">
+        <h1>Welcome to Indianapolis!</h1>
       </div>
 
     <main>
-      <div class="primary t-border">
+      <div id="about" class="primary t-border">
         <h2>About Indy</h2>
         <img src="../images/statue.jpg" alt="picture of statue" class="indy500">
         <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
           Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p><br>
-        <a class="callout" href="about.html" target="_blank">Find out more about Indy</a>
+        <a class="callout" href="about.html">Learn more about Indy</a>
       </div>
       <hr>
 
       <div class="secondary t-border group">
-        <div class="events">
+        <div id="activities"class="events">
           <h2>What to Do</h2>
           <img src="../images/crownhill.jpg" alt="view of Indy from cemetary" class="indy500">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
             Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p>
-          <a class="callout" href="../activities.html" target="_blank">Learn more about Indy activities</a>
+          <a class="callout" href="../activities.html">Learn more about what to do</a>
       </div>
       <hr>
 
       <div class="secondary t-border group">
-        <div class="events">
+        <div id="hotels" class="events">
           <h2>Where to Stay</h2>
           <img src="../images/monument.jpg" alt="Soldiers and Sailors statue in Indy" class="indy500">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
             Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p>
-          <a class="callout" href="../activities.html" target="_blank">Find out more about lodging</a>
+          <a class="callout" href="../activities.html">Learn more about hotels</a>
       </div>
       <hr>
 
-      <div id="contact">
-        <h2>Contact</h2>
+      <div id="subscribe">
+        <h2>Subscribe</h2>
         <img src="../images/sunset.jpg" alt="picture of a sunset" class="indy500">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum vitae ipsum vel feugiat. Mauris tincidunt et magna id pharetra.<br><br> 
           Phasellus mollis quam at suscipit pellentesque. Sed erat nisl, hendrerit at tortor vitae, facilisis gravida mi. Suspendisse ligula nisl, bibendum a cursus tempus, auctor at turpis.</p>
         <form action="index.html" method="POST">
           <fieldset>
             <legend>Contact Information</legend>
+          <div class="forms">
             <label for="name">Name</label>
             <input type="text" id="name" name="user_name">
+          </div>
+          <div class="forms">
             <label for="mail">Email</label>
             <input type="email" id="mail" name="user_email">
+          </div>
+          <div class="forms">
             <label for="street">Street Address</label>
             <input type="text" id="street" name="user_street">
+          </div>
+          <div class="forms">
             <label for="city">City</label>
             <input type="text" id="city" name="user_city">
+          </div>
+          <div class="forms">
             <label for="city">State</label>
             <select id="city" name="user_city">
               <optgroup label="Choose State"></optgroup>
@@ -118,8 +131,11 @@
               <option value="Wisconsin">Wisconsin</option>
               <option value="Wyoming">Wyoming</option>
             </select>
+          </div>
+          <div class="forms">
             <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="user_zip">
+          </div>
           </fieldset>
           <fieldset>
             <legend>Brochures</legend>
@@ -142,7 +158,6 @@
       <p>All Rights Reserved to the City of <a href="https://www.indy.gov/" target="_blank">Indianapolis</a>&copy; 2020</p>
       <p><a href="mailto:IndyInfo@gmail.com?subject=Hi%20There!">IndyInfo@email.com</a></p>
         <p>1234 E. Washington St. | Indianapolis, IN | 46204</p>
-      <a href="#top">Back to top &Rarr;</a>
     </footer>
     
   </body>
