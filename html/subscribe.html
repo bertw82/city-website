@@ -26,16 +26,108 @@
     
     <main>
       <div>
-      
+        <form action="index.html" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+          <div class="forms">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div class="forms">
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="user_email">
+          </div>
+          <div class="forms">
+            <label for="street">Street Address</label>
+            <input type="text" id="street" name="user_street">
+          </div>
+          <div class="forms">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city">
+          </div>
+          <div class="forms">
+            <label for="city">State</label>
+            <select id="city" name="user_city">
+              <optgroup label="Choose State"></optgroup>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+            </select>
+          </div>
+          <div class="forms">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zip">
+          </div>
+          </fieldset>
+          <fieldset>
+            <legend>Brochures</legend>
+            <p>Select your interests</p><br>
+            <input type="checkbox" id="recreation" name="interests"><label for="recreation">Outdoor Recreation</label>
+            <input type="checkbox" id="arts" name="interests"><label for="arts">Performing Arts</label>
+            <input type="checkbox" id="sports" name="interests"><label for="sports">Outdoor Recreation</label>
+            <input type="checkbox" id="food_drink" name="interests"><label for="food_drink">Outdoor Recreation</label>
+            <legend>Brochure Format</legend>
+            <p>Select Brochure format</p><br>
+            <input type="checkbox" id="email" name="format"><label for="email">Email</label>
+            <input type="checkbox" id="mail" name="format"><label for="mail">Post</label>
+          </fieldset>          
+        </form>
       </div>
     
     </main>
      
     <footer class="main-footer t-border">
-      <p>All Rights Reserved to the City of <a href="https://www.indy.gov/" target="_blank">Indianapolis</a><br>
-        &copy; 2020
-      </p>
-      <a href="#home">Back to top</a>
+      <p>Bert Witzel &copy;2020</p>
+      <p><a href="mailto:IndyInfo@gmail.com?subject=Hi%20There!">IndyInfo@email.com</a></p>
+      <p>1234 E. Washington St.<br>
+      Indianapolis, IN 46204</p>
+      <p><a href="#home">Back to Top</a></p>
     </footer>
   </body>
 </html>

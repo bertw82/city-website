@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-  
+  font-size: 1rem;
 }
 
 img {
@@ -49,11 +49,6 @@ hr {
   margin-top: 1.625em;
 }
 
-fieldset {
-  border: none;
-  text-align: left;
-}
-
 
 /* Links, Pseudo-classes, Transitions, Transforms ------------------ */
 
@@ -61,9 +56,9 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: rgb(127, 194, 216);
-}
+} */
 
 a:hover {
   color: rgb(164, 128, 238);
@@ -95,14 +90,7 @@ a:active {
   transition: border 1s ease-out;
 }
 
-/* Main Styles --------------------- */
-
-.main-header {
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-}
+/* Background Images */
 
 .banner {
   height: 16em;
@@ -135,14 +123,23 @@ a:active {
 .brochure {
   height: 16em;
   background: 
-  url('../images/parks.jpg') no-repeat center;
+  url('../images/colts.jpg') no-repeat center;
   background-size: cover;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  background-color: darkblue;
+  background-color: rgb(6, 6, 95);
   padding: 0;
   margin-top: 0;
 }
@@ -155,11 +152,6 @@ a:active {
   flex-grow: 1;
 }
 
-.forms {
-  display: flex;
-  flex-direction: column;
-}
-
 .main-footer {
   
 }
@@ -170,6 +162,64 @@ a:active {
 .secondary-content {
   
 }
+
+/* Form Styles */
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+/* Table Styles */
+
+caption {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  padding: 1em;
+}
+
+table {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+thead > tr {
+  background: rgb(107, 179, 182);
+}
+
+th[scope="col"] {
+  font-size: 1.125em;
+}
+
+th {
+  font-size: .9em;
+  padding: .3125em;
+} 
+
+td[colspan="3"] {
+  font-style: italic;
+}
+
+tr > td {
+  font-size: .8em;
+  padding: .3125em;
+}
+
+tr {
+  height: 3em;
+  background: rgb(196, 196, 196);
+}
+
+tr:nth-child(2n+2) {
+  background: lightblue;
+}
+
+/* Image Gallery Styles */
 
 /* Float Clearfix ------------------ */
 
