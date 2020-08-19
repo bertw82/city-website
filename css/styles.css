@@ -39,6 +39,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  line-height: 1.6;
 }
 
 img {
@@ -94,9 +95,10 @@ a:active {
 
 .banner {
   height: 16em;
-  background: 
+  background: linear-gradient(rgb(39, 161, 202), rgb(12, 12, 187)),
   url('../images/city.jpg') no-repeat center;
   background-size: cover;
+  background-blend-mode: soft-light;
 }
 
 .mlk {
@@ -108,9 +110,9 @@ a:active {
 
 .racetrack {
   height: 16em;
-  background: 
-  url('../images/indy-500.jpg') no-repeat center;
+  background: linear-gradient(rgb(255, 255, 104), orange), url('../images/indy-500.jpg') no-repeat center;
   background-size: cover;
+  background-blend-mode: saturation;
 }
 
 .hotels {
@@ -153,8 +155,72 @@ a:active {
 }
 
 .main-footer {
-  
+  border-top: 2px solid rgba(0,0,0,.4);
+  display: flex;
+  justify-content: space-around;
+  background: rgb(6, 6, 95);
 }
+
+.main-footer p,
+.main-footer a {
+  font-size: .9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indy-flex-1,
+.indy-flex-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.indy-flex-1 p {
+text-align: left;
+font-size: .8em;
+}
+
+.indy-flex-2 p {
+  text-align: right;
+  font-size: .8em;
+}
+
+/* activities.html Styles ------------------ */
+
+.activities-nav {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-nav li {
+  color: white;
+  margin-bottom: .3125em;
+  padding: .625em;
+  border-radius: .3125em;
+
+}
+
+.activities-nav li:first-child {
+  background: radial-gradient( blue, rgb(255, 247, 247));
+}
+
+.activities-nav li:nth-child(2) {
+  background: linear-gradient(45deg, gold, navy);
+}
+
+.activities-nav li:nth-of-type(3) {
+  background: linear-gradient(45deg, rgb(230, 229, 229), black);
+}
+
   
 /* Layout Styles ------------------ */
 
@@ -189,7 +255,7 @@ table {
 }
 
 thead > tr {
-  background: rgb(107, 179, 182);
+  background: rgb(124, 206, 209);
 }
 
 th[scope="col"] {
@@ -212,7 +278,7 @@ tr > td {
 
 tr {
   height: 3em;
-  background: rgb(196, 196, 196);
+  background: rgb(223, 222, 222);
 }
 
 tr:nth-child(2n+2) {
