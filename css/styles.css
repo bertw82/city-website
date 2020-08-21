@@ -46,8 +46,9 @@ img {
   width: 100%;
 }
 
-hr {
-  margin-top: 1.625em;
+.events {
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  padding-bottom: 1.625em;
 }
 
 
@@ -57,22 +58,13 @@ a:link {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: rgb(127, 194, 216);
-} */
-
-a:hover {
-  color: rgb(164, 128, 238);
-  border: 1px solid rgba(133, 81, 236, 0.5);
-}
-
 a:active {
-  color: rgb(131, 147, 236);
+  color: rgb(152, 236, 131);
 }
 
 .menu a {
   color: white;
-  transition: text-shadow .2s linear;
+  transition: text-shadow .3s ease-in, letter-spacing .3s ease-out;
   font-size: .9rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -80,15 +72,27 @@ a:active {
 
 .menu a:hover {
   border: none;
-  color: rgb(128, 240, 255);
-  text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+  text-shadow: 0px 0px 10px;
+  font-weight: 1000;
+  letter-spacing: 2px;
 }
 
 .callout {
-  color: rgb(79, 1, 204);
+  background: rgb(6, 6, 95);
+  color: white;
   font-weight: 600;
+  letter-spacing: 1px;
   padding: .6125em;
-  transition: border 1s ease-out;
+  transition: background .5s ease-out, letter-spacing .5s ease-out;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: .625em;
+}
+
+.callout:hover {
+  background: rgb(164, 128, 238);
+  letter-spacing: 3px;
 }
 
 /* Background Images */
@@ -103,9 +107,8 @@ a:active {
 
 .mlk {
   height: 16em;
-  background: 
-  url('../images/mlk.jpg') no-repeat center;
-  background-size: cover;
+  background: green url('../images/mlk.jpg') no-repeat center/cover;
+  background-blend-mode: screen;
 }
 
 .racetrack {
@@ -118,16 +121,20 @@ a:active {
 .hotels {
   height: 16em;
   background: 
-  url('../images/skyline.jpg') no-repeat center;
-  background-size: cover;
+    linear-gradient(cyan, transparent),
+    linear-gradient(225deg, magenta, transparent),
+    linear-gradient(45deg, red, transparent),
+    url('../images/skyline.jpg') no-repeat center/cover;
 }
 
 .brochure {
+  background-blend-mode: screen;
   height: 16em;
-  background: 
+  background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), 
   url('../images/colts.jpg') no-repeat center;
   background-size: cover;
 }
+
 
 /* Main Styles --------------------- */
 
@@ -171,6 +178,7 @@ a:active {
 .footer-flex {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid rgba(0,0,0,.4);
 }
 
 .indy-flex-1,
@@ -189,6 +197,21 @@ font-size: .8em;
 .indy-flex-2 p {
   text-align: right;
   font-size: .8em;
+}
+
+/* Photo Gallery Styles ------------------ */
+
+img[src*="gallery"] {
+  margin-bottom: 1em;
+}
+
+.love {
+  display: block;
+  transform: skewY(-10deg);
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.625em;
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
 }
 
 /* activities.html Styles ------------------ */
@@ -287,37 +310,54 @@ tr:nth-child(2n+2) {
 
 /* Image Gallery Styles */
 
-/* Float Clearfix ------------------ */
-
-/* .resorts,
-.tips {
-  width: 46.5%;
- 
-}
-  
-.resorts {
-  float: left;
-  }
-  
-.tips {
-  float: right;
-  }
-  
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 /* Media Queries -------------------- */
 
 @media screen and (min-width: 768px)
 
   {
-    /* .main-header {
-      padding-top: 1em;
-      height: 30em;
-    } */
+    .banner,
+    .racetrack,
+    .mlk,
+    .brochure,
+    .hotels {
+      height: 19em;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    .primary {
+      float: left;
+      width: 45%;
+    }
+    .secondary {
+      float: right;
+      width: 45%;
+    }
+
+    .tertiary {
+      float: left;
+      width: 45%;
+    }
+
+    .quaternary {
+      float: right;
+      width: 45%;
+    }
+
+    img[src$="1.jpg"],
+    img[src$="2.jpg"],
+    img[src$="3.jpg"],
+    img[src$="4.jpg"],
+    img[src$="5.jpg"],
+    img[src$="6.jpg"] {
+      float: left;
+      width: 45%;
+      margin-left: 3.5%;
+    }
+
   }
 
 @media screen and (min-width: 1024px)
@@ -328,3 +368,11 @@ tr:nth-child(2n+2) {
       height: 850px;
     } */
   }
+
+/* Float Clearfix ------------------ */
+  
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
