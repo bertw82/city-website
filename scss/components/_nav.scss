@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   background-color: $nav-color;
-  padding: 0;
-  margin-top: 0;
+  position: fixed;
+  // padding: 0;
+  // margin-top: 0;
   a {
     color: $white;
     transition: text-shadow .3s ease-in, letter-spacing .3s ease-out;
@@ -24,7 +25,32 @@
     padding-bottom: .8em;
     flex-grow: 1;
   }
+}
 
+.activities-nav {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  li {
+    color: white;
+    margin-bottom: .3125em;
+    padding: .625em;
+    border-radius: .3125em;
+  }
+}
+
+.activities-nav li:first-child {
+  background: radial-gradient( blue, rgb(255, 247, 247));
+}
+
+.activities-nav li:nth-child(2) {
+  background: linear-gradient(45deg, gold, navy);
+}
+
+.activities-nav li:nth-of-type(3) {
+  background: linear-gradient(45deg, rgb(230, 229, 229), black);
 }
 
 
