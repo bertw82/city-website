@@ -1,0 +1,337 @@
+.banner {
+  height: 16em;
+  background: linear-gradient(#27a1ca, #0c0cbb), url("../images/city.jpg") no-repeat center/cover;
+  background-blend-mode: soft-light;
+}
+
+.mlk {
+  height: 16em;
+  background: green url("../images/mlk.jpg") no-repeat center/cover;
+  background-blend-mode: screen;
+}
+
+.racetrack {
+  height: 16em;
+  background: linear-gradient(#ffff68, orange), url("../images/indy-500.jpg") no-repeat center/cover;
+  background-blend-mode: saturation;
+}
+
+.hotels {
+  height: 16em;
+  background: linear-gradient(cyan, transparent), linear-gradient(225deg, magenta, transparent), linear-gradient(45deg, red, transparent), url("../images/skyline.jpg") no-repeat center/cover;
+}
+
+.brochure {
+  height: 16em;
+  background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), url("../images/colts.jpg") no-repeat center/cover;
+  background-blend-mode: screen;
+}
+
+/* Base Styles -------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #4d4c4c;
+  background: azure;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.4rem;
+  margin: 0 0.125em;
+  padding-top: 2.3125em;
+  color: white;
+  text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+.events {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 1.625em;
+}
+
+/* Links, Pseudo-classes, Transitions, Transforms ------------------ */
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  color: #98ec83;
+}
+
+.main-nav a {
+  color: white;
+  transition: text-shadow 0.3s ease-in, letter-spacing 0.3s ease-out;
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  border: none;
+  text-shadow: 0px 0px 10px;
+  font-weight: 1000;
+  letter-spacing: 2px;
+}
+
+.callout {
+  background: #06065f;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.6125em;
+  transition: background 0.5s ease-out, letter-spacing 0.5s ease-out;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0.625em;
+}
+
+.callout:hover {
+  background: #a480ee;
+  letter-spacing: 3px;
+}
+
+/* Background Images */
+/* Main Styles --------------------- */
+.main-header {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #06065f;
+  padding: 0;
+  margin-top: 0;
+}
+
+.main-nav li {
+  color: white;
+  list-style: none;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  flex-grow: 1;
+}
+
+.main-footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  background: #06065f;
+}
+
+.main-footer p,
+.main-footer a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.indy-flex-1,
+.indy-flex-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.indy-flex-1 p {
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.indy-flex-2 p {
+  text-align: right;
+  font-size: 0.8em;
+}
+
+/* Photo Gallery Styles ------------------ */
+img[src*=gallery] {
+  margin-bottom: 1em;
+}
+
+.love {
+  display: block;
+  transform: skewY(-10deg);
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.625em;
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
+}
+
+/* activities.html Styles ------------------ */
+.activities-nav {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-nav li {
+  color: white;
+  margin-bottom: 0.3125em;
+  padding: 0.625em;
+  border-radius: 0.3125em;
+}
+
+.activities-nav li:first-child {
+  background: radial-gradient(blue, #fff7f7);
+}
+
+.activities-nav li:nth-child(2) {
+  background: linear-gradient(45deg, gold, navy);
+}
+
+.activities-nav li:nth-of-type(3) {
+  background: linear-gradient(45deg, #e6e5e5, black);
+}
+
+/* Layout Styles ------------------ */
+/* Form Styles */
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+/* Table Styles */
+caption {
+  font-size: 1.3125rem;
+  font-weight: 600;
+  padding: 1em;
+}
+
+table {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+thead > tr {
+  background: #7cced1;
+}
+
+th[scope=col] {
+  font-size: 1.125em;
+}
+
+th {
+  font-size: 0.9em;
+  padding: 0.3125em;
+}
+
+td[colspan="3"] {
+  font-style: italic;
+}
+
+tr > td {
+  font-size: 0.8em;
+  padding: 0.3125em;
+}
+
+tr {
+  height: 3em;
+  background: #dfdede;
+}
+
+tr:nth-child(2n+2) {
+  background: lightblue;
+}
+
+/* Image Gallery Styles */
+/* Media Queries -------------------- */
+@media screen and (min-width: 768px) {
+  .banner,
+.racetrack,
+.mlk,
+.brochure,
+.hotels {
+    height: 19em;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .primary {
+    float: left;
+    width: 45%;
+  }
+
+  .secondary {
+    float: right;
+    width: 45%;
+  }
+
+  .tertiary {
+    float: left;
+    width: 45%;
+  }
+
+  .quaternary {
+    float: right;
+    width: 45%;
+  }
+
+  img[src$="1.jpg"],
+img[src$="2.jpg"],
+img[src$="3.jpg"],
+img[src$="4.jpg"],
+img[src$="5.jpg"],
+img[src$="6.jpg"] {
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* .main-header { 
+    padding-top: 120px;
+    height: 850px;
+  } */
+}
+/* Float Clearfix ------------------ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=output.css.map */

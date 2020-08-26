@@ -1,0 +1,34 @@
+.banner {
+  height: $background-image-height;
+  background: linear-gradient(rgb(39, 161, 202), rgb(12, 12, 187)),
+  url('../images/city.jpg') no-repeat center/cover;
+  background-blend-mode: soft-light;
+}
+
+.mlk {
+  height: $background-image-height;
+  background: green url('../images/mlk.jpg') no-repeat center/cover;
+  background-blend-mode: screen;
+}
+
+.racetrack {
+  height: $background-image-height;
+  background: linear-gradient(rgb(255, 255, 104), orange), url('../images/indy-500.jpg') no-repeat center/cover;
+  background-blend-mode: saturation;
+}
+
+.hotels {
+  height: $background-image-height;
+  background: 
+    linear-gradient(cyan, transparent),
+    linear-gradient(225deg, magenta, transparent),
+    linear-gradient(45deg, red, transparent),
+    url('../images/skyline.jpg') no-repeat center/cover;
+}
+
+.brochure {
+  height: $background-image-height;
+  background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), 
+  url('../images/colts.jpg') no-repeat center/cover;
+  background-blend-mode: screen;
+}
