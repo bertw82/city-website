@@ -3,18 +3,22 @@
 // ======================================
 
 // Utilities
-@import 'utilities/variables';
+@import 'utilities/variables',
+        'utilities/mixins';
 
 // Base Styles
-@import 'base/base',
-        'base/reset';
+@import 'base/reset',
+        'base/base';
 
 // Components
 @import 'components/background-images',
         'components/images',
         'components/nav';
-
+        
 // Layout 
+@import 'layout/header',
+        'layout/main',
+        'layout/footer';
 
 .events {
   border-bottom: 1px solid rgba(0,0,0,.4);
@@ -24,31 +28,7 @@
 
 /* Links, Pseudo-classes, Transitions, Transforms ------------------ */
 
-a:link {
-  text-decoration: none;
-}
 
-a:active {
-  color: rgb(152, 236, 131);
-}
-
-.callout {
-  background: $nav-color;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: .6125em;
-  transition: background .5s ease-out, letter-spacing .5s ease-out;
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: .625em;
-}
-
-.callout:hover {
-  background: rgb(164, 128, 238);
-  letter-spacing: 3px;
-}
 
 /* Background Images */
 

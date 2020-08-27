@@ -1,4 +1,14 @@
+// Colors
 $white: #fff;
-$nav-color: rgb(6, 6, 95);
+$color-primary: rgb(6, 6, 95);
+$color-primary-light: lighten($color-primary, 15%);
+$color-bg: azure;
+$color-shade: rgb(255, 123, 189);
+$color-accent: rgb(255, 226, 61);
+$color-text: #424141;
 
-$background-image-height: 16em;
+// Fonts
+
+// Images
+$bg-height: 16em;
+$image-placement: no-repeat center/cover;
