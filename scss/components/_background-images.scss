@@ -32,3 +32,15 @@
   url('../images/colts.jpg') $image-placement;
   background-blend-mode: screen;
 }
+
+@media screen and (min-width: 768px) 
+
+  {
+    .banner,
+    .racetrack,
+    .mlk,
+    .brochure,
+    .hotels {
+      height: 19em;
+    }
+  }

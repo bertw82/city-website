@@ -1,3 +1,7 @@
 img {
   width: 100%;
 }
+
+img[src*="gallery"] {
+  margin-bottom: 1em;
+}

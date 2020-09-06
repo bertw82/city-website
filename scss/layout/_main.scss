@@ -1,0 +1,72 @@
+.callout {
+  background: $color-primary;
+  color: $color-accent;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: .6125em;
+  transition: background .5s ease-out, letter-spacing .5s ease-out;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: .625em;
+  &:hover {
+    background: $color-primary-light;
+    letter-spacing: 3px;
+  }
+}
+
+.events {
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  padding-bottom: 1.625em;
+}
+
+.love {
+  display: block;
+  transform: skewY(-10deg);
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.625em;
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
+}
+
+@media screen and (min-width: 768px) {
+
+  .primary {
+    float: left;
+    width: 45%;
+  }
+  .secondary {
+    float: right;
+    width: 45%;
+  }
+
+  .tertiary {
+    float: left;
+    width: 45%;
+  }
+
+  .quaternary {
+    float: right;
+    width: 45%;
+  }
+
+  img[src$="1.jpg"],
+  img[src$="2.jpg"],
+  img[src$="3.jpg"],
+  img[src$="4.jpg"],
+  img[src$="5.jpg"],
+  img[src$="6.jpg"] {
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+  }
+
+}
+
+/* Float Clearfix ------------------ */
+  
+// .clearfix:after {
+//   content: "";
+//   display: table;
+//   clear: both;
+// }
