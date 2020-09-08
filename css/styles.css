@@ -433,6 +433,25 @@ img[src*=gallery] {
   margin-bottom: 1em;
 }
 
+/* Float Clearfix ------------------ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 768px) {
+  img[src$="1.jpg"],
+img[src$="2.jpg"],
+img[src$="3.jpg"],
+img[src$="4.jpg"],
+img[src$="5.jpg"],
+img[src$="6.jpg"] {
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+  }
+}
 /* Form Styles */
 .forms {
   display: flex;
@@ -603,19 +622,7 @@ tr:nth-child(2n+2) {
     float: right;
     width: 45%;
   }
-
-  img[src$="1.jpg"],
-img[src$="2.jpg"],
-img[src$="3.jpg"],
-img[src$="4.jpg"],
-img[src$="5.jpg"],
-img[src$="6.jpg"] {
-    float: left;
-    width: 45%;
-    margin-left: 3.5%;
-  }
 }
-/* Float Clearfix ------------------ */
 .main-footer {
   border-top: 2px solid rgba(0, 0, 0, 0.4);
   display: flex;
@@ -653,14 +660,5 @@ img[src$="6.jpg"] {
   text-align: right;
   font-size: 0.8em;
 }
-
-/* Links, Pseudo-classes, Transitions, Transforms ------------------ */
-/* Background Images */
-/* Main Styles --------------------- */
-/* Photo Gallery Styles ------------------ */
-/* activities.html Styles ------------------ */
-/* Layout Styles ------------------ */
-/* Image Gallery Styles */
-/* Media Queries -------------------- */
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,3 +5,32 @@ img {
 img[src*="gallery"] {
   margin-bottom: 1em;
 }
+
+// #photo-gallery {
+//   @extend clearfix !optional;
+// }
+
+/* Float Clearfix ------------------ */
+  
+.clearfix {
+  &:after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  img[src$="1.jpg"],
+  img[src$="2.jpg"],
+  img[src$="3.jpg"],
+  img[src$="4.jpg"],
+  img[src$="5.jpg"],
+  img[src$="6.jpg"] {
+    float: left;
+    width: 45%;
+    margin-left: 3.5%;
+  }
+
+}
