@@ -7,7 +7,7 @@ body {
   background: $color-bg;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-stack-primary;
   text-align: center;
 }
 
@@ -17,17 +17,11 @@ main {
 }
 
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: $font-stack-headline;
   padding: 3em 1em 0 1em;
   margin-top: 0;
   color: $white;
   text-shadow: 1px 3px 1px rgba(0,0,0,.4);
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
 }
 
 h2 {
@@ -50,4 +44,12 @@ a {
     color: rgb(152, 236, 131);
   }
 }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+
 

@@ -1,6 +1,42 @@
 @mixin sports {
   border-radius: 50%;
   color: $white;
-  margin-bottom: .3125em;
-  padding: .625em;
+  margin: .3125em;
+  padding-top: 1.625em;
+  width: 80px;
+  height: 80px;
 }
+
+// Create Flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  }
+          
+// Media Queries
+@mixin mq($break) {
+$value: map-get($breakpoints, $break);
+$sm: map-get($breakpoints, 'sm');            
+            
+  @if $value == null {
+    @warn "`#{$break}` is not a valid breakpoint name";        
+    }
+            
+  @else if $value < $sm {
+    @media (max-width: $value) {
+      @content;       
+    }
+  } 
+  @else {
+    @media (min-width: $value) {
+      @content;        
+    }
+  }
+  
+ }

@@ -1,8 +1,7 @@
 /* Form Styles */
 
 .forms {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
 }
 
 fieldset {
@@ -40,14 +39,13 @@ td[colspan="3"] {
   font-style: italic;
 }
 
-tr > td {
-  font-size: .8em;
-  padding: .3125em;
-}
-
 tr {
   height: 3em;
   background: rgb(223, 222, 222);
+  & > td {
+    font-size: .8em;
+    padding: .3125em;
+  }
 }
 
 tr:nth-child(2n+2) {

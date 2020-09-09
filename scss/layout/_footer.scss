@@ -1,7 +1,6 @@
 .main-footer {
+  @include flexy($just: space-around);
   border-top: 2px solid rgba(0,0,0,.4);
-  display: flex;
-  justify-content: space-around;
   background: rgb(6, 6, 95);
 }
 
@@ -9,19 +8,17 @@
 .main-footer a {
   font-size: .9rem;
   font-weight: 600;
-  color: #fff;
+  color: $white;
 }
 
 .footer-flex {
-  display: flex;
-  justify-content: space-between;
+  @include flexy($just: space-between);
   border-top: 1px solid rgba(0,0,0,.4);
 }
 
 .indy-flex-1,
 .indy-flex-2 {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
   margin-top: 1em;
   margin-bottom: 1em;
 }

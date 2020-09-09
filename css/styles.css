@@ -363,11 +363,6 @@ h1 {
   text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
 h2 {
   font-size: 1.3125rem;
 }
@@ -378,7 +373,7 @@ p {
 }
 
 a:hover {
-  color: #ff7bbd;
+  color: #ffbede;
 }
 a:link {
   text-decoration: none;
@@ -387,6 +382,11 @@ a:active {
   color: #98ec83;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
 .banner {
   height: 16em;
   background: linear-gradient(#27a1ca, #0c0cbb), url("../images/city.jpg") no-repeat center/cover;
@@ -492,14 +492,13 @@ td[colspan="3"] {
   font-style: italic;
 }
 
-tr > td {
-  font-size: 0.8em;
-  padding: 0.3125em;
-}
-
 tr {
   height: 3em;
   background: #dfdede;
+}
+tr > td {
+  font-size: 0.8em;
+  padding: 0.3125em;
 }
 
 tr:nth-child(2n+2) {
@@ -537,16 +536,22 @@ tr:nth-child(2n+2) {
 }
 
 .activities-nav {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   text-align: center;
-  padding-left: 0;
-  display: flex;
+  padding-left: 0.625em;
+}
+.activities-nav a {
+  color: #fff;
 }
 .activities-nav li {
   border-radius: 50%;
   color: #fff;
-  margin-bottom: 0.3125em;
-  padding: 0.625em;
+  margin: 0.3125em;
+  padding-top: 1.625em;
+  width: 80px;
+  height: 80px;
 }
 .activities-nav li:first-child {
   background: radial-gradient(blue, #fff7f7);
@@ -561,7 +566,7 @@ tr:nth-child(2n+2) {
   background: radial-gradient(red, gold, black);
 }
 .activities-nav li:nth-child(5) {
-  background: radial-gradient(white, red);
+  background: radial-gradient(#ffdede, red);
 }
 .activities-nav li:last-child {
   background: radial-gradient(red, navy);
@@ -624,9 +629,9 @@ tr:nth-child(2n+2) {
   }
 }
 .main-footer {
-  border-top: 2px solid rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-around;
+  border-top: 2px solid rgba(0, 0, 0, 0.4);
   background: #06065f;
 }
 
