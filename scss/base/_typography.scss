@@ -34,8 +34,9 @@ p {
 }
 
 a {
+  color: $white;
   &:hover {
-    color: $color-shade;
+    
   }
   &:link {
     text-decoration: none;

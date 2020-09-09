@@ -6,7 +6,6 @@
   margin-top: 0;
   width: 100%;
   a {
-    color: $white;
     transition: text-shadow .3s ease-in, letter-spacing .3s ease-out;
     font-size: .9rem;
     font-family: $font-stack-secondary;
@@ -32,9 +31,6 @@
   list-style-type: none;
   text-align: center;
   padding-left: .625em;
-  a {
-    color: $white;
-  }
   li {
     @include sports;
     &:first-child {

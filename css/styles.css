@@ -372,8 +372,8 @@ p {
   line-height: 1.6;
 }
 
-a:hover {
-  color: #ffbede;
+a {
+  color: #fff;
 }
 a:link {
   text-decoration: none;
@@ -515,7 +515,6 @@ tr:nth-child(2n+2) {
   width: 100%;
 }
 .main-nav a {
-  color: #fff;
   transition: text-shadow 0.3s ease-in, letter-spacing 0.3s ease-out;
   font-size: 0.9rem;
   font-family: "Open Sans", sans-serif;
@@ -541,9 +540,6 @@ tr:nth-child(2n+2) {
   list-style-type: none;
   text-align: center;
   padding-left: 0.625em;
-}
-.activities-nav a {
-  color: #fff;
 }
 .activities-nav li {
   border-radius: 50%;
@@ -578,7 +574,6 @@ tr:nth-child(2n+2) {
 
 .callout {
   background: #06065f;
-  color: #ffe23d;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 0.6125em;
@@ -589,7 +584,7 @@ tr:nth-child(2n+2) {
   border-radius: 0.625em;
 }
 .callout:hover {
-  background: #0b0ba7;
+  background: #0c0cbf;
   letter-spacing: 3px;
 }
 
