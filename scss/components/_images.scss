@@ -1,5 +1,11 @@
 img {
   width: 100%;
+  .events & {
+    @include mq(lg) {
+      width: 80%;
+      margin-left: 0;
+    }
+  }
 }
 
 img[src*="gallery"] {

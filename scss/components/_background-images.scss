@@ -1,20 +1,30 @@
+
 .banner {
   height: $bg-height;
   background: linear-gradient(rgb(39, 161, 202), rgb(12, 12, 187)),
   url('../images/city.jpg') $image-placement;
   background-blend-mode: soft-light;
+  @include mq(lg) {
+    height: 25em;
+  }
 }
 
 .mlk {
   height: $bg-height;
   background: green url('../images/mlk.jpg') $image-placement;
   background-blend-mode: screen;
+  @include mq(lg) {
+    height: 25em;
+  }
 }
 
 .racetrack {
   height: $bg-height;
   background: linear-gradient(rgb(255, 255, 104), orange), url('../images/indy-500.jpg') $image-placement;
   background-blend-mode: saturation;
+  @include mq(lg) {
+    height: 25em;
+  }
 }
 
 .hotels {
@@ -24,6 +34,9 @@
     linear-gradient(225deg, magenta, transparent),
     linear-gradient(45deg, red, transparent),
     url('../images/skyline.jpg') $image-placement;
+    @include mq(lg) {
+      height: 25em;
+    }
 }
 
 .brochure {
@@ -31,16 +44,8 @@
   background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), 
   url('../images/colts.jpg') $image-placement;
   background-blend-mode: screen;
+  @include mq(lg) {
+    height: 25em;
+  }
 }
 
-@media screen and (min-width: 768px) 
-
-  {
-    .banner,
-    .racetrack,
-    .mlk,
-    .brochure,
-    .hotels {
-      height: 19em;
-    }
-  }

@@ -1,16 +1,8 @@
-.callout {
-  background: $color-primary;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: .6125em;
-  transition: background .5s ease-out, letter-spacing .5s ease-out;
-  display: block;
-  width: 80%;
+main {
   margin: 0 auto;
-  border-radius: .625em;
-  &:hover {
-    background: $color-primary-light;
-    letter-spacing: 3px;
+  width: 90%;
+  @include mq(lg) {
+    max-width: 1000px;
   }
 }
 
@@ -19,36 +11,86 @@
   padding-bottom: 1.625em;
 }
 
+.lovely {
+  width: 75%;
+  margin: 0 auto;
+  @include flexy($just: space-around, $align: center);
+}
+
 .love {
   display: block;
-  transform: skewY(-10deg);
+  transform: skewY(-5deg);
   font-family: $font-stack-cursive;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   margin-top: 1.625em;
   margin-bottom: 1.625em;
 }
 
-@media screen and (min-width: 768px) {
-
-  .primary {
-    float: left;
-    width: 45%;
-  }
-  .secondary {
-    float: right;
-    width: 45%;
-  }
-
-  .tertiary {
-    float: left;
-    width: 45%;
-  }
-
-  .quaternary {
-    float: right;
-    width: 45%;
-  }
-
+.heart {
+  @include mq(med)
+{ background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+} 
 }
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.primary,
+.tertiary {
+  @include mq(med) {
+  float: left;
+  width: 45%;
+  }
+  @include mq(lg) {
+    @include flexy($align: center);
+    float: none;
+    width: 100%;
+  }
+}
+.secondary,
+.quaternary {
+  @include mq(med) {
+  float: right;
+  width: 45%;
+  }
+  @include mq(lg) {
+    @include flexy;
+    float: none;
+    width: 100%;
+  }
+}
+
+.learn {
+  @include mq(lg) {
+  margin-top: ems(35);
+  @include flexy($dir: column, $just: space-between);
+  }
+}
+
+
 
 
