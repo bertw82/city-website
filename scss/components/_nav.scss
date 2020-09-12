@@ -26,7 +26,7 @@
     list-style: none;
     padding-top: .8em;
     padding-bottom: .8em;
-    flex-grow: 1;
+    // flex-grow: 1;
     &:first-child {
       display: none;
       color: $color-accent;
@@ -37,12 +37,13 @@
       font-size: 1em;
     }
     }
-    @include mq(lg) {
-      padding: 1em 0 1em 0;
+    @include mq(med) {
+      padding: 1em;
     }
     @include mq(med) { 
       &:first-child {
       display: initial;
+      margin-right: auto;
       }
     }
   }

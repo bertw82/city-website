@@ -86,8 +86,7 @@ main {
 
 .learn {
   @include mq(lg) {
-  margin-top: ems(35);
-  @include flexy($dir: column, $just: space-between);
+  @include flexy($dir: column, $just: center);
   }
 }
 

@@ -566,7 +566,6 @@ tr:nth-child(2n+2) {
   list-style: none;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
-  flex-grow: 1;
 }
 .main-nav li:first-child {
   display: none;
@@ -580,14 +579,15 @@ tr:nth-child(2n+2) {
     font-size: 1em;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .main-nav li {
-    padding: 1em 0 1em 0;
+    padding: 1em;
   }
 }
 @media (min-width: 768px) {
   .main-nav li:first-child {
     display: initial;
+    margin-right: auto;
   }
 }
 
@@ -745,10 +745,9 @@ main {
 
 @media (min-width: 992px) {
   .learn {
-    margin-top: 2.1875em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
