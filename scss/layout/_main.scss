@@ -26,39 +26,6 @@ main {
   margin-bottom: 1.625em;
 }
 
-.heart {
-  @include mq(med)
-{ background-color: red;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 0;
-  transform: rotate(-45deg);
-  width: 30px;
-} 
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-}
-
-.heart:before {
-  top: -15px;
-  left: 0;
-}
-
-.heart:after {
-  left: 15px;
-  top: 0;
-}
-
 .primary,
 .tertiary {
   @include mq(med) {
@@ -78,7 +45,7 @@ main {
   width: 45%;
   }
   @include mq(lg) {
-    @include flexy;
+    @include flexy($align: center);
     float: none;
     width: 100%;
   }
@@ -86,7 +53,7 @@ main {
 
 .learn {
   @include mq(lg) {
-  @include flexy($dir: column, $just: center);
+  @include flexy($dir: column, $just: flex-end);
   }
 }
 

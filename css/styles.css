@@ -448,6 +448,31 @@ a:active {
   }
 }
 
+.love {
+  position: relative;
+}
+
+.love::before,
+.love::after {
+  content: "";
+  background-color: #5f5f06;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.love::before {
+  top: -0.9375em;
+  left: -1.875em;
+}
+
+.love::after {
+  top: -0.1875em;
+  right: -2em;
+}
+
 img {
   width: 100%;
 }
@@ -678,39 +703,6 @@ main {
 }
 
 @media (min-width: 768px) {
-  .heart {
-    background-color: red;
-    display: inline-block;
-    height: 30px;
-    margin: 0 10px;
-    position: relative;
-    top: 0;
-    transform: rotate(-45deg);
-    width: 30px;
-  }
-}
-
-.heart:before,
-.heart:after {
-  content: "";
-  background-color: red;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-}
-
-.heart:before {
-  top: -15px;
-  left: 0;
-}
-
-.heart:after {
-  left: 15px;
-  top: 0;
-}
-
-@media (min-width: 768px) {
   .primary,
 .tertiary {
     float: left;
@@ -738,6 +730,7 @@ main {
   .secondary,
 .quaternary {
     display: flex;
+    align-items: center;
     float: none;
     width: 100%;
   }
@@ -747,7 +740,7 @@ main {
   .learn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
@@ -762,7 +755,10 @@ main {
 .main-footer a {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #fff;
+}
+
+.main-footer p {
+  color: #ffb52c;
 }
 
 .main-footer a:hover {

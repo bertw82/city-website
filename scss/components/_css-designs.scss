@@ -1,0 +1,25 @@
+.love {
+  position: relative;
+}
+
+.love::before,
+.love::after {
+  content: "";
+  background-color: $complement;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.love::before {
+  top: ems(-15);
+  left: ems(-30);
+}
+
+.love::after {
+  top: ems(-3);
+  right: ems(-32);
+}
+

@@ -8,7 +8,10 @@
 .main-footer a {
   font-size: .9rem;
   font-weight: 600;
-  color: $white;
+}
+
+.main-footer p {
+  color: $color-accent;
 }
 
 .main-footer a:hover {

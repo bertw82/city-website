@@ -6,6 +6,7 @@ $color-bg: azure;
 $color-hover: rgb(196, 183, 255);
 $color-accent: rgb(255, 181, 44);
 $color-text: #424141;
+$complement: complement($color-primary);
 
 // Fonts
 $font-stack-primary: 'Roboto', sans-serif;
