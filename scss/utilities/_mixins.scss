@@ -1,11 +1,3 @@
-@mixin sports {
-  border-radius: 50%;
-  color: $white;
-  margin: .3125em;
-  padding-top: 1.625em;
-  width: 80px;
-  height: 80px;
-}
 
 // Create Flex container
 @mixin flexy(
@@ -26,11 +18,7 @@
 $value: map-get($breakpoints, $break);
 $sm: map-get($breakpoints, 'sm');            
             
-  @if $value == null {
-    @warn "`#{$break}` is not a valid breakpoint name";        
-    }
-            
-  @else if $value < $sm {
+  @if $value < $sm {
     @media (max-width: $value) {
       @content;       
     }

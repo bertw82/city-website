@@ -380,6 +380,19 @@ p {
 .footer-flex p {
   font-weight: bold;
 }
+.tips p:first-child::first-letter {
+  float: left;
+  font-size: 2.5em;
+  padding: 0.3125em 0.625em;
+  margin: 0.125em 0.125em 0 0;
+  background: #5f5f06;
+  color: #fff;
+  line-height: 1;
+  border-radius: 0.125em;
+}
+.tips p:last-child::first-line {
+  font-family: "Cedarville Cursive", cursive;
+}
 
 a {
   color: #fff;
@@ -658,40 +671,6 @@ tr:nth-child(2n+2) {
   letter-spacing: 3px;
 }
 
-.activities-nav {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  text-align: center;
-  padding-left: 0.625em;
-}
-.activities-nav li {
-  border-radius: 50%;
-  color: #fff;
-  margin: 0.3125em;
-  padding-top: 1.625em;
-  width: 80px;
-  height: 80px;
-}
-.activities-nav li:first-child {
-  background: radial-gradient(blue, #fff7f7);
-}
-.activities-nav li:nth-child(2) {
-  background: radial-gradient(gold, navy);
-}
-.activities-nav li:nth-of-type(3) {
-  background: radial-gradient(#e6e5e5, black);
-}
-.activities-nav li:nth-last-of-type(3) {
-  background: radial-gradient(red, gold, black);
-}
-.activities-nav li:nth-child(5) {
-  background: radial-gradient(#ffdede, red);
-}
-.activities-nav li:last-child {
-  background: radial-gradient(red, navy);
-}
-
 .main-header {
   width: 100%;
 }
@@ -699,11 +678,7 @@ tr:nth-child(2n+2) {
 main {
   margin: 0 auto;
   width: 90%;
-}
-@media (min-width: 992px) {
-  main {
-    max-width: 1000px;
-  }
+  max-width: 1000px;
 }
 
 .events {
@@ -750,6 +725,47 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+}
+
+.tips {
+  text-align: left;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .tips {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .tips {
+    width: 60%;
+  }
+}
+
+.sports {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.sports img {
+  width: 6.25em;
+}
+.sports a {
+  color: #424141;
+}
+.sports > div {
+  width: 50%;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .sports > div {
+    width: 33.33%;
+  }
+}
+@media (min-width: 992px) {
+  .sports > div {
+    width: 16.66%;
   }
 }
 

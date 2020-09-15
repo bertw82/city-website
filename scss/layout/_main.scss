@@ -1,9 +1,7 @@
 main {
   margin: 0 auto;
   width: 90%;
-  @include mq(lg) {
-    max-width: 1000px;
-  }
+  max-width: 1000px;
 }
 
 .events {
@@ -41,6 +39,39 @@ main {
   @include flexy($dir: column, $just: flex-end);
   }
 }
+
+.tips {
+  text-align: left;
+  margin: 0 auto;
+  @include mq(med) {
+    width: 80%;
+  }
+  @include mq(lg) {
+    width: 60%;
+  }
+}
+
+.sports {
+  @include flexy($wrap: wrap);
+  margin-bottom: 1em;
+  img {
+    width: ems(100);
+  }
+  a {
+    color: $color-text;
+  }
+  & > div {
+    width: 50%;
+    margin-bottom: 1em;
+    @include mq(med) {
+      width: 33.33%;
+    }
+    @include mq(lg) {
+      width: 16.66%;
+    }
+  }
+}
+
 
 
 

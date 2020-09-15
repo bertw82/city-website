@@ -65,33 +65,6 @@
   }
 }
 
-.activities-nav {
-  @include flexy($wrap: wrap);
-  list-style-type: none;
-  text-align: center;
-  padding-left: .625em;
-  li {
-    @include sports;
-    &:first-child {
-      background: radial-gradient( blue, rgb(255, 247, 247));
-    }
-    &:nth-child(2) {
-      background: radial-gradient( gold, navy);
-    }
-    &:nth-of-type(3) {
-      background: radial-gradient( rgb(230, 229, 229), black);
-    }
-    &:nth-last-of-type(3) {
-      background: radial-gradient(red, gold, black);             
-    }
-    &:nth-child(5) {
-      background: radial-gradient(rgb(255, 222, 222), red);
-    }
-    &:last-child {
-      background: radial-gradient(red, navy);
-    }
-  }
-}
 
 
 

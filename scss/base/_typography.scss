@@ -36,6 +36,21 @@ p {
   .footer-flex & {
     font-weight: bold;
   }
+  .tips & {
+    &:first-child::first-letter {
+      float: left;
+      font-size: ems(40);
+      padding: ems(5) ems(10);
+      margin: ems(2) ems(2) 0 0;
+      background: $complement;
+      color: $white;
+      line-height: 1;
+      border-radius: ems(2);
+    }
+    &:last-child::first-line {
+      font-family: $font-stack-cursive;
+    }
+  }
 }
 
 a {
