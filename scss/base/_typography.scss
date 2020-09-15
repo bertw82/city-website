@@ -48,7 +48,8 @@ p {
       border-radius: ems(2);
     }
     &:last-child::first-line {
-      font-family: $font-stack-cursive;
+      font-style: italic;
+      font-weight: bold;
     }
   }
 }

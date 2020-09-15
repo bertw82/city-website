@@ -391,7 +391,8 @@ p {
   border-radius: 0.125em;
 }
 .tips p:last-child::first-line {
-  font-family: "Cedarville Cursive", cursive;
+  font-style: italic;
+  font-weight: bold;
 }
 
 a {
@@ -730,7 +731,7 @@ main {
 
 .tips {
   text-align: left;
-  margin: 0 auto;
+  margin: 2em auto 0;
 }
 @media (min-width: 768px) {
   .tips {

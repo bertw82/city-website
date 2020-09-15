@@ -42,7 +42,7 @@ main {
 
 .tips {
   text-align: left;
-  margin: 0 auto;
+  margin: 2em auto 0;
   @include mq(med) {
     width: 80%;
   }
