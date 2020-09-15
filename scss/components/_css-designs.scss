@@ -1,5 +1,10 @@
 .love {
+  display: inline-block;
   position: relative;
+  transform: skewY(-5deg);
+  font-family: $font-stack-cursive;
+  font-size: 1.625rem;
+  margin: 1.625em;
 }
 
 .love::before,

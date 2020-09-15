@@ -388,7 +388,7 @@ a:link {
   text-decoration: none;
 }
 a:active {
-  color: #98ec83;
+  color: yellow;
 }
 .indy-flex-1 a {
   color: #06065f;
@@ -418,8 +418,7 @@ a:active {
 
 .racetrack {
   height: 16em;
-  background: linear-gradient(#ffff68, orange), url("../images/indy-500.jpg") no-repeat center/cover;
-  background-blend-mode: saturation;
+  background: linear-gradient(#ff4500, transparent 90%), linear-gradient(to right, #fff, transparent), orange url("../images/indy-500.jpg") no-repeat center/cover;
 }
 @media (min-width: 992px) {
   .racetrack {
@@ -439,7 +438,7 @@ a:active {
 
 .brochure {
   height: 16em;
-  background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), url("../images/colts.jpg") no-repeat center/cover;
+  background: url("../images/bridge.jpg") no-repeat center/cover;
   background-blend-mode: screen;
 }
 @media (min-width: 992px) {
@@ -449,7 +448,12 @@ a:active {
 }
 
 .love {
+  display: inline-block;
   position: relative;
+  transform: skewY(-5deg);
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 1.625rem;
+  margin: 1.625em;
 }
 
 .love::before,
@@ -507,14 +511,25 @@ img[src$="6.jpg"] {
   }
 }
 /* Form Styles */
-.forms {
-  display: flex;
-  flex-direction: column;
+form {
+  background: #b4ffff;
+  margin-top: 0.625em;
+  border-radius: 0.625em;
 }
 
 fieldset {
   border: none;
   text-align: left;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area {
+  display: block;
+  padding-bottom: 0.625em;
 }
 
 /* Table Styles */
@@ -525,12 +540,13 @@ caption {
 }
 
 table {
-  max-width: 60em;
+  max-width: 95%;
   margin: 0 auto;
+  padding-bottom: 2em;
 }
 
 thead > tr {
-  background: #7cced1;
+  background: #88e2e6;
 }
 
 th[scope=col] {
@@ -540,6 +556,11 @@ th[scope=col] {
 th {
   font-size: 0.9em;
   padding: 0.3125em;
+}
+@media (min-width: 768px) {
+  th {
+    padding: 1em;
+  }
 }
 
 td[colspan="3"] {
@@ -554,9 +575,14 @@ tr > td {
   font-size: 0.8em;
   padding: 0.3125em;
 }
+@media (min-width: 768px) {
+  tr > td {
+    padding: 1em;
+  }
+}
 
 tr:nth-child(2n+2) {
-  background: lightblue;
+  background: #88e2e6;
 }
 
 .main-nav {
@@ -683,23 +709,6 @@ main {
 .events {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   padding-bottom: 1.625em;
-}
-
-.lovely {
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.love {
-  display: block;
-  transform: skewY(-5deg);
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 1.625rem;
-  margin-top: 1.625em;
-  margin-bottom: 1.625em;
 }
 
 @media (min-width: 768px) {

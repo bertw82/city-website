@@ -11,21 +11,6 @@ main {
   padding-bottom: 1.625em;
 }
 
-.lovely {
-  width: 75%;
-  margin: 0 auto;
-  @include flexy($just: space-around, $align: center);
-}
-
-.love {
-  display: block;
-  transform: skewY(-5deg);
-  font-family: $font-stack-cursive;
-  font-size: 1.625rem;
-  margin-top: 1.625em;
-  margin-bottom: 1.625em;
-}
-
 .primary,
 .tertiary {
   @include mq(med) {

@@ -20,8 +20,9 @@
 
 .racetrack {
   height: $bg-height;
-  background: linear-gradient(rgb(255, 255, 104), orange), url('../images/indy-500.jpg') $image-placement;
-  background-blend-mode: saturation;
+  background: linear-gradient(#ff4500, transparent 90%), 
+              linear-gradient(to right, $white, transparent),
+              orange url('../images/indy-500.jpg') $image-placement;
   @include mq(lg) {
     height: 25em;
   }
@@ -41,8 +42,7 @@
 
 .brochure {
   height: $bg-height;
-  background: repeating-linear-gradient(45deg, lightgrey 20px, blue 30px, darkblue 40px), 
-  url('../images/colts.jpg') $image-placement;
+  background: url('../images/bridge.jpg') $image-placement;
   background-blend-mode: screen;
   @include mq(lg) {
     height: 25em;
