@@ -9,7 +9,7 @@
   }
 }
 
-.mlk {
+.racetrack {
   height: $bg-height;
   background: green url('../images/mlk.jpg') $image-placement;
   background-blend-mode: screen;
@@ -18,7 +18,7 @@
   }
 }
 
-.racetrack {
+.mlk {
   height: $bg-height;
   background: linear-gradient(#ff4500, transparent 90%), 
               linear-gradient(to right, $white, transparent),

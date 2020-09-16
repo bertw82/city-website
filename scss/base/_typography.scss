@@ -18,7 +18,7 @@ h1 {
   color: $white;
   text-shadow: 1px 3px 1px rgba(0,0,0,.4);
   @include mq(med) { 
-      font-size: 3.2rem;
+      font-size: 3rem;
       padding: 2.4em 1em 0 1em;
   }
   @include mq(lg) {
@@ -40,16 +40,12 @@ p {
     &:first-child::first-letter {
       float: left;
       font-size: ems(40);
-      padding: ems(5) ems(10);
+      padding: ems(7) ems(10);
       margin: ems(2) ems(2) 0 0;
-      background: $complement;
+      background: rgb(221, 16, 16);
       color: $white;
       line-height: 1;
       border-radius: ems(2);
-    }
-    &:last-child::first-line {
-      font-style: italic;
-      font-weight: bold;
     }
   }
 }

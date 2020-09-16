@@ -1,8 +1,46 @@
-// .events {
-//   display: grid;
-//   max-width: 1000px;
-//   margin: 0 auto;
-//   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-//   // grid-auto-rows: minmax(200px, auto);
-//   grid-gap: 5px 20px;
-// }
+.primary {
+  grid-area: primary;
+}
+
+.secondary {
+  grid-area: secondary;
+}
+
+.tertiary {
+  grid-area: tertiary;
+}
+
+.quaternary {
+  grid-area: quaternary;
+}
+
+.section {
+  grid-area: section;
+}
+
+.article {
+  grid-area: article
+}
+
+.container {
+  @include mq(med) {
+    display: grid;
+    grid-gap: ems(20);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "primary secondary"
+      "tertiary quaternary";
+  }
+  @include mq(lg) {
+    @include flexy($dir: column);
+  }
+}
+
+.primary,
+.secondary,
+.tertiary,
+.quaternary {
+  @include mq(lg) {
+    @include flexy;
+  }
+}

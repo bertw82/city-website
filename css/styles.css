@@ -359,7 +359,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     padding: 2.4em 1em 0 1em;
   }
 }
@@ -383,16 +383,12 @@ p {
 .tips p:first-child::first-letter {
   float: left;
   font-size: 2.5em;
-  padding: 0.3125em 0.625em;
+  padding: 0.4375em 0.625em;
   margin: 0.125em 0.125em 0 0;
-  background: #5f5f06;
+  background: #dd1010;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
-}
-.tips p:last-child::first-line {
-  font-style: italic;
-  font-weight: bold;
 }
 
 a {
@@ -419,23 +415,23 @@ a:active {
   }
 }
 
-.mlk {
+.racetrack {
   height: 16em;
   background: green url("../images/mlk.jpg") no-repeat center/cover;
   background-blend-mode: screen;
 }
 @media (min-width: 992px) {
-  .mlk {
+  .racetrack {
     height: 25em;
   }
 }
 
-.racetrack {
+.mlk {
   height: 16em;
   background: linear-gradient(#ff4500, transparent 90%), linear-gradient(to right, #fff, transparent), orange url("../images/indy-500.jpg") no-repeat center/cover;
 }
 @media (min-width: 992px) {
-  .racetrack {
+  .mlk {
     height: 25em;
   }
 }
@@ -461,6 +457,26 @@ a:active {
   }
 }
 
+.callout {
+  background: #06065f;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.6125em;
+  transition: background 0.5s ease-out, letter-spacing 0.5s ease-out;
+  display: block;
+  width: 80%;
+  border-radius: 0 0.625em 0 0.625em;
+}
+.callout:hover {
+  background: #0e0ed7;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .callout {
+    margin: auto auto 0;
+  }
+}
+
 .love {
   display: inline-block;
   position: relative;
@@ -482,13 +498,20 @@ a:active {
 }
 
 .love::before {
-  top: -0.9375em;
+  top: -0.625em;
   left: -1.875em;
 }
 
 .love::after {
-  top: -0.1875em;
+  top: -0.4375em;
   right: -2em;
+}
+
+/* Float Clearfix ------------------ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 img {
@@ -505,11 +528,21 @@ img[src*=gallery] {
   margin-bottom: 1em;
 }
 
-/* Float Clearfix ------------------ */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+img[src^="../images/colts.jpg"] {
+  width: 75%;
+  float: right;
+}
+@media (min-width: 768px) {
+  img[src^="../images/colts.jpg"] {
+    width: 50%;
+  }
+}
+
+img[src^="../images/svg-images"] {
+  transition: all 0.4s;
+}
+img[src^="../images/svg-images"]:hover {
+  transform: scale(1.2) rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -656,20 +689,16 @@ tr:nth-child(2n+2) {
   }
 }
 
-.callout {
-  background: #06065f;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 0.6125em;
-  transition: background 0.5s ease-out, letter-spacing 0.5s ease-out;
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 0 0.625em 0 0.625em;
+@media (min-width: 768px) {
+  .learn {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.callout:hover {
-  background: #0e0ed7;
-  letter-spacing: 3px;
+@media (min-width: 992px) {
+  .learn {
+    flex-basis: 62.5em;
+  }
 }
 
 .main-header {
@@ -680,53 +709,6 @@ main {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
-}
-
-.events {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  padding-bottom: 1.625em;
-}
-
-@media (min-width: 768px) {
-  .primary,
-.tertiary {
-    float: left;
-    width: 45%;
-  }
-}
-@media (min-width: 992px) {
-  .primary,
-.tertiary {
-    display: flex;
-    align-items: center;
-    float: none;
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .secondary,
-.quaternary {
-    float: right;
-    width: 45%;
-  }
-}
-@media (min-width: 992px) {
-  .secondary,
-.quaternary {
-    display: flex;
-    align-items: center;
-    float: none;
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .learn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
 }
 
 .tips {
@@ -753,7 +735,17 @@ main {
   width: 6.25em;
 }
 .sports a {
+  display: inline-block;
+  padding: 0.625em;
   color: #424141;
+  border-radius: 0.3125em;
+  transition: background ease-in-out 0.3s, color ease-in-out 0.3s, transform ease-in-out 0.3s;
+}
+.sports a:hover {
+  background: #5f5f06;
+  color: #fff;
+  border-radius: 0.3125em;
+  transform: skewX(-5deg);
 }
 .sports > div {
   width: 50%;
@@ -813,6 +805,54 @@ main {
 .indy-flex-2 p {
   text-align: right;
   font-size: 0.8em;
+}
+
+.primary {
+  grid-area: primary;
+}
+
+.secondary {
+  grid-area: secondary;
+}
+
+.tertiary {
+  grid-area: tertiary;
+}
+
+.quaternary {
+  grid-area: quaternary;
+}
+
+.section {
+  grid-area: section;
+}
+
+.article {
+  grid-area: article;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-gap: 1.25em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "primary secondary" "tertiary quaternary";
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  .primary,
+.secondary,
+.tertiary,
+.quaternary {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

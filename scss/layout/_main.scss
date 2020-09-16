@@ -4,42 +4,6 @@ main {
   max-width: 1000px;
 }
 
-.events {
-  border-bottom: 1px solid rgba(0,0,0,.4);
-  padding-bottom: 1.625em;
-}
-
-.primary,
-.tertiary {
-  @include mq(med) {
-  float: left;
-  width: 45%;
-  }
-  @include mq(lg) {
-    @include flexy($align: center);
-    float: none;
-    width: 100%;
-  }
-}
-.secondary,
-.quaternary {
-  @include mq(med) {
-  float: right;
-  width: 45%;
-  }
-  @include mq(lg) {
-    @include flexy($align: center);
-    float: none;
-    width: 100%;
-  }
-}
-
-.learn {
-  @include mq(lg) {
-  @include flexy($dir: column, $just: flex-end);
-  }
-}
-
 .tips {
   text-align: left;
   margin: 2em auto 0;
@@ -51,6 +15,12 @@ main {
   }
 }
 
+.events {
+  
+  // border-bottom: 1px solid rgba(0,0,0,.4);
+  // padding-bottom: 1.625em;
+}
+
 .sports {
   @include flexy($wrap: wrap);
   margin-bottom: 1em;
@@ -58,7 +28,18 @@ main {
     width: ems(100);
   }
   a {
+    display: inline-block;
+    padding: ems(10);
     color: $color-text;
+    border-radius: ems(5);
+    transition: background ease-in-out .3s, color ease-in-out .3s, 
+                transform ease-in-out .3s;
+    &:hover {
+      background: $complement;
+      color: $white;
+      border-radius: ems(5);
+      transform: skewX(-5deg);
+    }
   }
   & > div {
     width: 50%;

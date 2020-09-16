@@ -19,12 +19,21 @@
 }
 
 .love::before {
-  top: ems(-15);
+  top: ems(-10);
   left: ems(-30);
 }
 
 .love::after {
-  top: ems(-3);
+  top: ems(-7);
   right: ems(-32);
 }
 
+/* Float Clearfix ------------------ */
+  
+.clearfix {
+  &:after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+}

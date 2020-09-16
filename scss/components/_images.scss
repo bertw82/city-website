@@ -12,17 +12,18 @@ img[src*="gallery"] {
   margin-bottom: 1em;
 }
 
-// #photo-gallery {
-//   @extend clearfix !optional;
-// }
+img[src^="../images/colts.jpg"] {
+  width: 75%;
+  float: right;
+  @include mq(med) {
+    width: 50%;
+  }
+}
 
-/* Float Clearfix ------------------ */
-  
-.clearfix {
-  &:after{
-  content: "";
-  display: table;
-  clear: both;
+img[src^="../images/svg-images"] {
+  transition: all .4s; 
+  &:hover {
+    transform: scale(1.2) rotate(360deg);
   }
 }
 
