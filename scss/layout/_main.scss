@@ -15,7 +15,14 @@ main {
   }
 }
 
+.lovely {
+  border-top: 1px solid rgba(0,0,0,.4);
+  margin-top: 2em;
+}
+
 .sports {
+  background-color: $color-bg-dark;
+  border-radius: ems(5);
   @include flexy($wrap: wrap);
   margin-bottom: 1em;
   img {

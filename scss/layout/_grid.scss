@@ -33,12 +33,6 @@
   }
   @include mq(lg) {
     display: initial;
-    // grid-template-columns: 1fr;
-    // grid-template-areas: 
-    //   "primary" 
-    //   "secondary"
-    //   "tertiary" 
-    //   "quaternary";
   }
 }
 
@@ -54,9 +48,11 @@
 .learn {
   @include mq(med) {
     @include flexy($dir: column);
+    height: ems(300);
     }
   @include mq(lg) {
     flex-basis: 87em;
+    height: auto;
   }
 }
 

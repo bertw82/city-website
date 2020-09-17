@@ -1,8 +1,9 @@
 // Colors
 $white: #fff;
 $color-primary: rgb(6, 6, 95);
-$color-primary-light: lighten($color-primary, 25%);
+$color-primary-light: lighten($color-primary, 20%);
 $color-bg: azure;
+$color-bg-dark: darken($color-bg, 15%);
 $color-hover: rgb(196, 183, 255);
 $color-accent: rgb(255, 181, 44);
 $color-text: #424141;

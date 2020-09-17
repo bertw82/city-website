@@ -385,10 +385,17 @@ p {
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
   margin: 0.125em 0.125em 0 0;
-  background: #dd1010;
+  background: firebrick;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
+}
+@media (min-width: 768px) {
+  .learn p {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
 }
 @media (min-width: 992px) {
   .learn p {
@@ -475,7 +482,7 @@ a:active {
   border-radius: 0 0.625em 0 0.625em;
 }
 .callout:hover {
-  background: #0e0ed7;
+  background: #0c0cbf;
   letter-spacing: 2px;
 }
 @media (min-width: 768px) {
@@ -549,7 +556,7 @@ img[src^="../images/svg-images"] {
   transition: all 0.4s;
 }
 img[src^="../images/svg-images"]:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.3) rotate(360deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -727,7 +734,14 @@ main {
   }
 }
 
+.lovely {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  margin-top: 2em;
+}
+
 .sports {
+  background-color: #a4ffff;
+  border-radius: 0.3125em;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1em;
@@ -766,7 +780,6 @@ main {
 .main-footer {
   display: flex;
   justify-content: space-around;
-  border-top: 2px solid rgba(0, 0, 0, 0.4);
   background: #06065f;
 }
 
@@ -859,11 +872,13 @@ main {
   .learn {
     display: flex;
     flex-direction: column;
+    height: 18.75em;
   }
 }
 @media (min-width: 992px) {
   .learn {
     flex-basis: 87em;
+    height: auto;
   }
 }
 
