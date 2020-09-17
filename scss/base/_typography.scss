@@ -48,6 +48,12 @@ p {
       border-radius: ems(2);
     }
   }
+  .learn & {
+    @include mq(lg) {
+    margin-top: auto;
+    padding: 0 2em 0;
+    }
+  }
 }
 
 a {

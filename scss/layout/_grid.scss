@@ -32,7 +32,13 @@
       "tertiary quaternary";
   }
   @include mq(lg) {
-    @include flexy($dir: column);
+    display: initial;
+    // grid-template-columns: 1fr;
+    // grid-template-areas: 
+    //   "primary" 
+    //   "secondary"
+    //   "tertiary" 
+    //   "quaternary";
   }
 }
 
@@ -44,3 +50,4 @@
     @include flexy;
   }
 }
+

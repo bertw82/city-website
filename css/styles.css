@@ -390,6 +390,12 @@ p {
   line-height: 1;
   border-radius: 0.125em;
 }
+@media (min-width: 992px) {
+  .learn p {
+    margin-top: auto;
+    padding: 0 2em 0;
+  }
+}
 
 a {
   color: #fff;
@@ -588,8 +594,9 @@ caption {
 
 table {
   max-width: 95%;
-  margin: 0 auto;
-  padding-bottom: 2em;
+  margin: 0 auto 2em;
+  border-radius: 0.625em;
+  box-shadow: 0 0.3125em 0.1875em 0.125em;
 }
 
 thead > tr {
@@ -597,16 +604,21 @@ thead > tr {
 }
 
 th[scope=col] {
-  font-size: 1.125em;
+  font-size: 1.125rem;
+}
+@media (min-width: 992px) {
+  th[scope=col] {
+    font-size: 1.3125rem;
+  }
 }
 
 th {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   padding: 0.3125em;
 }
 @media (min-width: 768px) {
   th {
-    padding: 1em;
+    padding: 1em 2em 1em 2em;
   }
 }
 
@@ -619,12 +631,12 @@ tr {
   background: #dfdede;
 }
 tr > td {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding: 0.3125em;
 }
 @media (min-width: 768px) {
   tr > td {
-    padding: 1em;
+    padding: 2em;
   }
 }
 
@@ -697,7 +709,7 @@ tr:nth-child(2n+2) {
 }
 @media (min-width: 992px) {
   .learn {
-    flex-basis: 62.5em;
+    flex-basis: 87em;
   }
 }
 
@@ -841,8 +853,7 @@ main {
 }
 @media (min-width: 992px) {
   .container {
-    display: flex;
-    flex-direction: column;
+    display: initial;
   }
 }
 
