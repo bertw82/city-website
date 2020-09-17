@@ -1,9 +1,0 @@
-.learn {
-  @include mq(med) {
-    @include flexy($dir: column);
-    }
-  @include mq(lg) {
-    flex-basis: 87em;
-  }
-}
-

@@ -471,6 +471,7 @@ a:active {
   transition: background 0.5s ease-out, letter-spacing 0.5s ease-out;
   display: block;
   width: 80%;
+  margin: 0 auto;
   border-radius: 0 0.625em 0 0.625em;
 }
 .callout:hover {
@@ -701,18 +702,6 @@ tr:nth-child(2n+2) {
   }
 }
 
-@media (min-width: 768px) {
-  .learn {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 992px) {
-  .learn {
-    flex-basis: 87em;
-  }
-}
-
 .main-header {
   width: 100%;
 }
@@ -863,6 +852,18 @@ main {
 .tertiary,
 .quaternary {
     display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .learn {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .learn {
+    flex-basis: 87em;
   }
 }
 
