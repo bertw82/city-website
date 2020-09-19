@@ -343,7 +343,7 @@ template {
 
 body {
   color: #424141;
-  background: azure;
+  background: #f8f8ff;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -380,12 +380,15 @@ p {
 .footer-flex p {
   font-weight: bold;
 }
+.tips p {
+  text-align: justify;
+}
 .tips p:first-child::first-letter {
   float: left;
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
   margin: 0.125em 0.125em 0 0;
-  background: firebrick;
+  background: darkred;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
@@ -430,8 +433,7 @@ a:active {
 
 .racetrack {
   height: 16em;
-  background: green url("../images/mlk.jpg") no-repeat center/cover;
-  background-blend-mode: screen;
+  background: url("../images/parks.jpg") no-repeat center/cover;
 }
 @media (min-width: 992px) {
   .racetrack {
@@ -461,8 +463,8 @@ a:active {
 
 .brochure {
   height: 16em;
-  background: url("../images/bridge.jpg") no-repeat center/cover;
-  background-blend-mode: screen;
+  background: green url("../images/bridge.jpg") no-repeat center/cover;
+  background-blend-mode: lighten;
 }
 @media (min-width: 992px) {
   .brochure {
@@ -528,6 +530,65 @@ a:active {
   clear: both;
 }
 
+/* CSS Accordion ------------------ */
+.tab-group {
+  margin: 1em auto;
+  max-width: 40em;
+  width: 100%;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+}
+
+.tab label {
+  background: #5f5f06;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  transition: letter-spacing 0.55s;
+}
+
+.tab input:focus + label,
+.tab label:hover {
+  letter-spacing: 1px;
+}
+.tab input:focus + label:hover,
+.tab label:hover:hover {
+  background-color: #a7a70b;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab-content p {
+  margin: 1em 0;
+}
+
+/* open the tab when label is checked */
+.tab input:checked ~ .tab-content {
+  max-height: 6.25em;
+}
+
+/*.tab > input:not(:focus) ~ .tab-content { 
+	max-height: 0;
+	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
+}*/
 img {
   width: 100%;
 }
@@ -537,26 +598,49 @@ img {
     margin-left: 0;
   }
 }
-
-img[src*=gallery] {
-  margin-bottom: 1em;
-}
-
 img[src^="../images/colts.jpg"] {
   width: 75%;
   float: right;
+  margin-left: 0.625em;
 }
 @media (min-width: 768px) {
   img[src^="../images/colts.jpg"] {
     width: 50%;
+    margin-left: 1em;
   }
 }
-
+img[src*=gallery] {
+  margin-bottom: 1em;
+}
 img[src^="../images/svg-images"] {
   transition: all 0.4s;
 }
 img[src^="../images/svg-images"]:hover {
   transform: scale(1.3) rotate(360deg);
+}
+
+.rfk {
+  position: absolute;
+  background: #5f5f06;
+  color: #fff;
+  height: 2em;
+  bottom: 0.4em;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 0.7rem;
+  border-radius: 0 0 0.3125em 0.3125em;
+}
+@media (min-width: 768px) {
+  .rfk {
+    padding-top: 0.625em;
+    height: 2.5em;
+    bottom: 0.125em;
+    font-size: 0.9rem;
+  }
+}
+
+.park-picture {
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -740,11 +824,12 @@ main {
 }
 
 .sports {
-  background-color: #a4ffff;
+  background-color: #f0e68c;
   border-radius: 0.3125em;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1em;
+  margin-top: 2em;
 }
 .sports img {
   width: 6.25em;
@@ -752,12 +837,12 @@ main {
 .sports a {
   display: inline-block;
   padding: 0.625em;
-  color: #424141;
+  color: #000;
   border-radius: 0.3125em;
   transition: background ease-in-out 0.3s, color ease-in-out 0.3s, transform ease-in-out 0.3s;
 }
 .sports a:hover {
-  background: #5f5f06;
+  background: #06065f;
   color: #fff;
   border-radius: 0.3125em;
   transform: skewX(-5deg);

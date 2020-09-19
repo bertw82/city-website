@@ -27,6 +27,13 @@ $sm: map-get($breakpoints, 'sm');
     @media (min-width: $value) {
       @content;        
     }
-  }
-  
+  } 
  }
+
+ // Hover Effect
+
+ @mixin hover($btn-color) {
+  &:hover {
+    background-color: lighten($btn-color, 15%);
+  } 
+}

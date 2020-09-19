@@ -21,22 +21,23 @@ main {
 }
 
 .sports {
-  background-color: $color-bg-dark;
+  background-color:#f0e68c;
   border-radius: ems(5);
   @include flexy($wrap: wrap);
   margin-bottom: 1em;
+  margin-top: 2em;
   img {
     width: ems(100);
   }
   a {
     display: inline-block;
     padding: ems(10);
-    color: $color-text;
+    color: #000;
     border-radius: ems(5);
     transition: background ease-in-out .3s, color ease-in-out .3s, 
                 transform ease-in-out .3s;
     &:hover {
-      background: $complement;
+      background: $color-primary;
       color: $white;
       border-radius: ems(5);
       transform: skewX(-5deg);

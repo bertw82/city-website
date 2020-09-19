@@ -5,16 +5,15 @@
   url('../images/city.jpg') $image-placement;
   background-blend-mode: soft-light;
   @include mq(lg) {
-    height: 25em;
+    height: $bg-lg-height;
   }
 }
 
 .racetrack {
   height: $bg-height;
-  background: green url('../images/mlk.jpg') $image-placement;
-  background-blend-mode: screen;
+  background: url('../images/parks.jpg') $image-placement;
   @include mq(lg) {
-    height: 25em;
+    height: $bg-lg-height;
   }
 }
 
@@ -24,7 +23,7 @@
               linear-gradient(to right, $white, transparent),
               orange url('../images/indy-500.jpg') $image-placement;
   @include mq(lg) {
-    height: 25em;
+    height: $bg-lg-height;
   }
 }
 
@@ -36,16 +35,16 @@
     linear-gradient(45deg, red, transparent),
     url('../images/skyline.jpg') $image-placement;
     @include mq(lg) {
-      height: 25em;
+      height: $bg-lg-height;
     }
 }
 
 .brochure {
   height: $bg-height;
-  background: url('../images/bridge.jpg') $image-placement;
-  background-blend-mode: screen;
+  background: green url('../images/bridge.jpg') $image-placement;
+  background-blend-mode: lighten;
   @include mq(lg) {
-    height: 25em;
+    height: $bg-lg-height;
   }
 }
 

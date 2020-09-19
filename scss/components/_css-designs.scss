@@ -37,3 +37,68 @@
   clear: both;
   }
 }
+
+/* CSS Accordion ------------------ */
+
+.tab-group {
+	margin: 1em auto;
+	max-width: 40em;
+	width: 100%;
+}
+
+.tab {
+	position: relative;
+  width: 100%;
+}
+
+.tab input { 
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: -999;
+}
+	
+.tab label {
+	background: $complement;
+	color: $white; 
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	line-height: 3;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em; 
+	transition: letter-spacing 0.55s ;
+}	
+
+.tab input:focus + label,
+.tab label:hover{ 
+	@include hover($complement);
+	letter-spacing: 1px; 
+}
+
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.35s;
+}
+
+.tab-content p {
+	margin: 1em 0;
+}
+
+/* open the tab when label is checked */
+
+.tab input:checked ~ .tab-content { 
+	max-height: 6.25em;
+}
+
+
+/*.tab > input:not(:focus) ~ .tab-content { 
+	max-height: 0;
+	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
+}*/
+
+
+
+
+
