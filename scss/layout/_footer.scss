@@ -16,6 +16,7 @@
 }
 
 .footer-flex {
+  margin-top: 2em;
   @include flexy($just: space-between);
   border-top: 1px solid rgba(0,0,0,.4);
 }
