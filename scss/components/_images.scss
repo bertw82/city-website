@@ -15,9 +15,6 @@ img {
       margin-left: 1em;
     }
   }
-  &[src*="gallery"] {
-    margin-bottom: 1em;
-  }
   &[src^="../images/svg-images"] {
     transition: all .4s; 
     &:hover {
@@ -52,19 +49,28 @@ img {
   }
 }
 
-
-
-@media screen and (min-width: 768px) {
-
-  img[src$="1.jpg"],
-  img[src$="2.jpg"],
-  img[src$="3.jpg"],
-  img[src$="4.jpg"],
-  img[src$="5.jpg"],
-  img[src$="6.jpg"] {
-    float: left;
-    width: 45%;
-    margin-left: 3.5%;
+.photo-gallery {
+  @include mq(med) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: ems(20);
   }
-
+  @include mq(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
+// @media screen and (min-width: 768px) {
+
+//   img[src$="1.jpg"],
+//   img[src$="2.jpg"],
+//   img[src$="3.jpg"],
+//   img[src$="4.jpg"],
+//   img[src$="5.jpg"],
+//   img[src$="6.jpg"] {
+//     float: left;
+//     width: 45%;
+//     margin-left: 3.5%;
+//   }
+
+// }

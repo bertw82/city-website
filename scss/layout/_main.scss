@@ -12,7 +12,7 @@ main {
 }
 
 .sports {
-  background-color:#f0e68c;
+  background-color:rgb(230, 230, 230);
   border-radius: ems(5);
   @include flexy($wrap: wrap);
   margin-bottom: 1em;
