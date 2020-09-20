@@ -60,6 +60,15 @@ p {
     padding: 0 2em 0;
     }
   }
+  .orchestra & {
+    max-width: 40em;
+    text-align: justify;
+    margin: 0 auto;
+    &:first-child {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
 }
 
 a {

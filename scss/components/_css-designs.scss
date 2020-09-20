@@ -1,7 +1,7 @@
 .love {
   display: inline-block;
   position: relative;
-  transform: skewY(-5deg);
+  transform: skewY(-3deg);
   font-family: $font-stack-cursive;
   font-size: 1.625rem;
   margin: 1.625em;
@@ -9,13 +9,14 @@
 
 .love::before,
 .love::after {
-  content: "";
-  background-color: $complement;
-  height: 15px;
-  width: 15px;
+	content: "";
+	border: 1px solid red;
+  // background-color: $complement;
+  // height: 15px;
+  // width: 15px;
   position: absolute;
-  border-radius: 50%;
-  margin: 1em;
+  // border-radius: 50%;
+  // margin: 1em;
 }
 
 .love::before {

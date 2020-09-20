@@ -5,13 +5,9 @@ main {
 }
 
 .tips {
-  text-align: left;
   margin: 2em auto 0;
   @include mq(med) {
-    width: 80%;
-  }
-  @include mq(lg) {
-    width: 60%;
+    max-width: 80%;
   }
 }
 

@@ -37,3 +37,10 @@ $sm: map-get($breakpoints, 'sm');
     background-color: lighten($btn-color, 15%);
   } 
 }
+
+@mixin nav-font {
+  font-size: .9rem;
+  font-family: $font-stack-secondary;
+  font-weight: 600;
+  text-transform: uppercase;
+}

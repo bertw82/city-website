@@ -3,18 +3,16 @@
   background: rgb(6, 6, 95);
 }
 
-.main-footer p,
-.main-footer a {
-  font-size: .9rem;
-  font-weight: 600;
-}
-
 .main-footer p {
-  color: $color-accent;
+  @include nav-font;
+  color: $white;
 }
 
-.main-footer a:hover {
-  color: $color-hover;
+.main-footer a {
+  @include nav-font;
+  &:hover {
+    color: $color-hover;
+  }
 }
 
 .footer-flex {
