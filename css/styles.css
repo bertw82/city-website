@@ -388,7 +388,7 @@ p {
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
   margin: 0.125em 0.125em 0 0;
-  background: #7a0101;
+  background: darkred;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
@@ -625,6 +625,12 @@ img[src^="../images/svg-images"]:hover {
   }
 }
 
+.photo-gallery {
+  padding-bottom: 1em;
+}
+.photo-gallery:last-child {
+  padding-bottom: 0;
+}
 @media (min-width: 768px) {
   .photo-gallery {
     display: grid;
@@ -636,28 +642,6 @@ img[src^="../images/svg-images"]:hover {
   .photo-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* Form Styles */
-form {
-  background: #b4ffff;
-  margin-top: 0.625em;
-  border-radius: 0.625em;
-}
-
-fieldset {
-  border: none;
-  text-align: left;
-}
-
-.forms {
-  display: flex;
-  flex-direction: column;
-}
-
-.text-area {
-  display: block;
-  padding-bottom: 0.625em;
 }
 
 /* Table Styles */
