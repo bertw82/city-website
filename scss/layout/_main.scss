@@ -28,7 +28,7 @@ main {
     transition: background ease-in-out .3s, color ease-in-out .3s, 
                 transform ease-in-out .3s;
     &:hover {
-      background: $color-primary;
+      background: $color-primary-light;
       color: $white;
       border-radius: ems(5);
       transform: skewX(-5deg);

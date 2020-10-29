@@ -12,12 +12,16 @@
 .racetrack {
   height: $bg-height;
   background: url('../images/parks.jpg') $image-placement;
+  padding-right: .5em;
+  padding-left: .5em;
   @include mq(lg) {
     height: $bg-lg-height;
   }
 }
 
 .mlk {
+  padding-right: .5em;
+  padding-left: .5em;
   height: $bg-height;
   background: linear-gradient(#ff4500, transparent 90%), 
               linear-gradient(to right, $white, transparent),
@@ -41,8 +45,10 @@
 
 .brochure {
   height: $bg-height;
-  background: green url('../images/bridge.jpg') $image-placement;
+  background: radial-gradient(rgba(252, 252, 3, .5), rgba(58, 58, 255, 0.5)), url('../images/bridge.jpg') $image-placement;
   background-blend-mode: lighten;
+  padding-right: 1em;
+  padding-left: 1em;
   @include mq(lg) {
     height: $bg-lg-height;
   }

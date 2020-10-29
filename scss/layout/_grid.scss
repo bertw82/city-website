@@ -46,13 +46,16 @@
 }
 
 .learn {
+  margin-bottom: 3em;
   @include mq(med) {
     @include flexy($dir: column);
     height: ems(300);
+    margin-bottom: 2em;
     }
   @include mq(lg) {
     flex-basis: 87em;
     height: auto;
+    margin-bottom: 0;
   }
 }
 

@@ -36,21 +36,24 @@ img {
   }
 }
 
-.rfk {
+figure {
+  margin: 0;
+	line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: .3em 2em;	
+	background: rgba(19,43,102, .85);
   position: absolute;
-  background: $complement;
-  color: $white;
-  height: 2em;
-  bottom: .4em;
+  bottom: 0;
   width: 100%;
-  padding: .3em;
-  font-size: .7rem;
-  border-radius: 0 0 ems(5) ems(5);
+  
   @include mq(med) {
-    padding-top: .625em;
-    height: 2.5em;
-    bottom: .125em;
-    font-size: .9rem;
+    padding: 1em;
   }
 }
 
