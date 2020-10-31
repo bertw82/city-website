@@ -41,6 +41,7 @@
 .tertiary,
 .quaternary {
   @include mq(lg) {
+    margin-top: 1em;
     @include flexy;
   }
 }

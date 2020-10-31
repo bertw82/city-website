@@ -13,21 +13,27 @@ body {
 
 h1 {
   font-family: $font-stack-headline;
-  padding: 3em 1em 0 1em;
+  padding: 1.9em 1em 0 1em;
   margin-top: 0;
   color: $white;
   text-shadow: 1px 3px 1px rgba(0,0,0,.4);
   @include mq(med) { 
       font-size: 3rem;
-      padding: 2.4em 1em 0 1em;
+      padding: 2.1em 1em 0 1em;
   }
   @include mq(lg) {
     font-size: 4.2rem;
+  }
+  @include mq(x-lg) {
+    font-size: 5.2rem;
   }
 }
 
 h2 {
   font-size: 1.3125rem;
+  @include mq(lg) {
+    font-size: 2rem;
+  }
 }
 
 p {
@@ -56,8 +62,11 @@ p {
       padding-top: 1em;
     }
     @include mq(lg) {
-    margin-top: auto;
-    padding: 0 2em 0;
+      margin-top: auto;
+      padding: 0 2em 0;
+    }
+    @include mq(x-lg){
+      font-size: 1.1rem;
     }
   }
   .orchestra & {
