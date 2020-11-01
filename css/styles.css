@@ -398,7 +398,7 @@ p {
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
   margin: 0.125em 0.125em 0 0;
-  background: #010141;
+  background: #acacff;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
@@ -445,7 +445,7 @@ a:active {
 }
 
 .banner {
-  height: 12em;
+  height: 13em;
   background: linear-gradient(#27a1ca, #0c0cbb), url("../images/city.jpg") no-repeat center/cover;
   background-blend-mode: soft-light;
   margin-top: 2.3125em;
@@ -470,7 +470,7 @@ a:active {
 }
 
 .racetrack {
-  height: 12em;
+  height: 13em;
   background: url("../images/parks.jpg") no-repeat center/cover;
   padding: 0 16%;
   margin-top: 2.3125em;
@@ -494,8 +494,9 @@ a:active {
 }
 
 .mlk {
-  height: 12em;
+  height: 13em;
   margin-top: 2.3125em;
+  padding: 0 1em;
   background: linear-gradient(#ff4500, transparent 90%), linear-gradient(to right, #fff, transparent), orange url("../images/indy-500.jpg") no-repeat center/cover;
 }
 @media (min-width: 768px) {
@@ -516,7 +517,7 @@ a:active {
 }
 
 .hotels {
-  height: 12em;
+  height: 13em;
   margin-top: 2.3125em;
   padding: 0 12%;
   background: linear-gradient(cyan, transparent), linear-gradient(225deg, magenta, transparent), linear-gradient(45deg, red, transparent), url("../images/skyline.jpg") no-repeat center/cover;
@@ -540,7 +541,7 @@ a:active {
 }
 
 .brochure {
-  height: 12em;
+  height: 13em;
   background: radial-gradient(rgba(252, 252, 3, 0.5), rgba(58, 58, 255, 0.5)), url("../images/bridge.jpg") no-repeat center/cover;
   background-blend-mode: lighten;
   padding-right: 1em;
@@ -822,8 +823,8 @@ tr:nth-child(2n+2) {
 .main-nav li {
   color: #fff;
   list-style: none;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .main-nav li:first-child {
   display: none;
@@ -869,7 +870,7 @@ main {
 }
 
 .sports {
-  background-color: #e6e6e6;
+  background-color: #acacff;
   border-radius: 0.3125em;
   display: flex;
   flex-wrap: wrap;
@@ -878,17 +879,18 @@ main {
 }
 .sports img {
   width: 6.25em;
+  border-radius: 5px;
 }
-.sports a {
+.sports-link {
   display: inline-block;
   padding: 0.625em;
-  color: #000;
+  background: #010141;
+  color: #fff;
   border-radius: 0.3125em;
   transition: background ease-in-out 0.3s, color ease-in-out 0.3s, transform ease-in-out 0.3s;
 }
-.sports a:hover {
+.sports-link:hover {
   background: #02028c;
-  color: #fff;
   border-radius: 0.3125em;
   transform: skewX(-5deg);
 }
@@ -908,13 +910,13 @@ main {
 }
 
 .gallery-div {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .main-footer {
   display: flex;
   justify-content: space-around;
-  background: #06065f;
+  background: #010141;
 }
 
 .main-footer p {
@@ -952,12 +954,12 @@ main {
 
 .indy-flex-1 p {
   text-align: left;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .indy-flex-2 p {
   text-align: right;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 .primary {

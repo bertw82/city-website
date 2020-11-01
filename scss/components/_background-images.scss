@@ -40,6 +40,7 @@
 .mlk {
   height: $bg-height;
   margin-top: ems(37);
+  padding: 0 1em;
   background: linear-gradient(#ff4500, transparent 90%), 
               linear-gradient(to right, $white, transparent),
               orange url('../images/indy-500.jpg') $image-placement;

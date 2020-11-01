@@ -1,6 +1,6 @@
 .main-footer {
   @include flexy($just: space-around);
-  background: rgb(6, 6, 95);
+  background: $color-primary;
 }
 
 .main-footer p {
@@ -30,10 +30,10 @@
 
 .indy-flex-1 p {
 text-align: left;
-font-size: .8em;
+font-size: .8rem;
 }
 
 .indy-flex-2 p {
   text-align: right;
-  font-size: .8em;
+  font-size: .8rem;
 }

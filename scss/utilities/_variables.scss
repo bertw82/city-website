@@ -1,11 +1,11 @@
 // Colors
 $white: #fff;
 $color-primary: rgb(1, 1, 65);
-$color-primary-light: lighten($color-primary, 15%);
+$color-primary-light: lighten($color-primary, 20%);
 $color-bg: #f8f8ff;
-$color-bg-dark: darken($color-bg, 15%);
+$color-bg-dark: darken($color-bg, 30%);
 $color-hover: rgb(196, 183, 255);
-$color-accent: rgb(255, 181, 44);
+// $color-accent: ;
 $color-text: #424141;
 $complement: complement($color-primary);
 $sports-bg: rgb(230, 230, 230);
@@ -17,7 +17,7 @@ $font-stack-headline: 'Permanent Marker', cursive;
 $font-stack-cursive: 'Cedarville Cursive', cursive;
 
 // Images
-$bg-height: 12em;
+$bg-height: 13em;
 $bg-height-med: 16em;
 $image-placement: no-repeat center/cover;
 $bg-lg-height: 25em;

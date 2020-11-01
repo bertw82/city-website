@@ -12,24 +12,26 @@ main {
 }
 
 .sports {
-  background-color:rgb(230, 230, 230);
+  // background-color:rgb(230, 230, 230);
+  background-color: $color-bg-dark;
   border-radius: ems(5);
   @include flexy($wrap: wrap);
   margin-bottom: 1em;
   margin-top: 2em;
   img {
     width: ems(100);
+    border-radius: 5px;
   }
-  a {
+  &-link {
     display: inline-block;
     padding: ems(10);
-    color: #000;
+    background: $color-primary;
+    color: $white;
     border-radius: ems(5);
     transition: background ease-in-out .3s, color ease-in-out .3s, 
                 transform ease-in-out .3s;
     &:hover {
       background: $color-primary-light;
-      color: $white;
       border-radius: ems(5);
       transform: skewX(-5deg);
     }
@@ -47,7 +49,7 @@ main {
 }
 
 .gallery-div {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 
