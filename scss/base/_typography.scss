@@ -53,6 +53,7 @@ p {
       color: $white;
       line-height: 1;
       border-radius: ems(2);
+      border: 1px solid $color-overlay-bg;
     }
   }
   .learn & {

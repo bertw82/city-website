@@ -402,6 +402,7 @@ p {
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
+  border: 1px solid rgba(1, 1, 65, 0.9);
 }
 @media (min-width: 768px) {
   .learn p {
@@ -842,7 +843,7 @@ tr:nth-child(2n+2) {
 }
 @media (min-width: 768px) {
   .main-nav li {
-    padding: 1em;
+    padding: 1.2em 1em;
   }
 }
 .main-nav li:nth-child(2) {

@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(1, 1, 65, 0.9);
+  background-color: $color-overlay-bg;
   overflow-x: hidden;
   transition: 0.5s;
   text-transform: uppercase;
