@@ -4,20 +4,28 @@
     <title>Indy Info</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
   <body>
     <header id="home" class="main-header">
-      <ul class="mobile-main-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="activities.html">To Do</a></li>
-        <li><a href="hotels.html">Stay</a></li>
-        <li><a href="subscribe.html">Photos</a></li>
-      </ul>
+      <div class="overlay" id="mobileNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="overlay-content">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">To Do</a></li>
+          <li><a href="hotels.html">Stay</a></li>
+          <li><a href="subscribe.html">Photos</a></li>
+        </ul>
+      </div>
+
       <nav>
-        <ul class="main-nav">
+        <ul class="main-nav" id="mainNav">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+            <i class="fa fa-bars" style="font-size:40px; color: white"></i>
+          </span>
           <li>Indianapolis</li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -25,7 +33,7 @@
           <li><a href="hotels.html">Stay</a></li>
           <li><a href="subscribe.html">Photos</a></li>
         </ul>
-      </nav>
+      </nav>    
     </header>
 
     <div class="mlk">
@@ -92,5 +100,6 @@
     <p>&copy;2020 Bert Witzel</p>
     <p><a href="about.html">Back to Top</a></p>
   </footer>
+  <script src="js/app.js"></script>
   </body>
 </html>

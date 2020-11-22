@@ -10,16 +10,23 @@
   </head>
   <body>
     <header id="home" class="main-header">
-      <i class="fa fa-bars" style="font-size:36px; color: white"></i>
-      <ul class="main-nav" id="mobileNav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="activities.html">To Do</a></li>
-        <li><a href="hotels.html">Stay</a></li>
-        <li><a href="subscribe.html">Photos</a></li>
-      </ul>
+      
+      <div class="overlay" id="mobileNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="overlay-content">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">To Do</a></li>
+          <li><a href="hotels.html">Stay</a></li>
+          <li><a href="subscribe.html">Photos</a></li>
+        </ul>
+      </div>
+
       <nav>
         <ul class="main-nav" id="mainNav">
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+            <i class="fa fa-bars" style="font-size:40px; color: white"></i>
+          </span>
           <li>Indianapolis</li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>

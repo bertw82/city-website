@@ -54,4 +54,5 @@ $sm: map-get($breakpoints, 'sm');
   width: 100%;
   z-index: 1000;
   top: 0;
+  @content;
 }
