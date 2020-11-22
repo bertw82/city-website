@@ -24,6 +24,7 @@ main {
   }
   &-link {
     display: inline-block;
+    width: 7em;
     padding: ems(10);
     background: $color-primary;
     color: $white;

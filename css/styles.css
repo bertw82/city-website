@@ -397,8 +397,8 @@ p {
   float: left;
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
-  margin: 0.125em 0.125em 0 0;
-  background: #acacff;
+  margin: 0.125em 0.3125em 0 0;
+  background: #9292ff;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
@@ -577,7 +577,7 @@ a:active {
   border-radius: 0 0.625em 0 0.625em;
 }
 .callout:hover {
-  background: #02028c;
+  background: #0303a5;
   letter-spacing: 2px;
 }
 @media (min-width: 768px) {
@@ -661,13 +661,19 @@ img {
     margin-left: 0;
   }
 }
-img[src^="../images/colts.jpg"] {
-  width: 75%;
-  float: right;
-  margin-left: 0.625em;
+img[src^="images/colts.jpg"] {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
-  img[src^="../images/colts.jpg"] {
+  img[src^="images/colts.jpg"] {
+    width: 60%;
+    float: right;
+    margin-left: 0.625em;
+  }
+}
+@media (min-width: 992px) {
+  img[src^="images/colts.jpg"] {
     width: 50%;
     margin-left: 1em;
   }
@@ -714,7 +720,7 @@ figcaption {
 }
 @media (min-width: 768px) {
   .park-picture {
-    max-width: 45em;
+    max-width: 40em;
     margin: 2em auto 0;
   }
 }
@@ -745,12 +751,18 @@ table {
   border-radius: 0.625em;
   box-shadow: 0 0.3125em 0.1875em 0.125em;
 }
+@media (min-width: 768px) {
+  table {
+    width: 35em;
+  }
+}
 
 thead > tr {
   background: #88e2e6;
 }
 
 th[scope=col] {
+  background-color: #5ed8dd;
   font-size: 1.125rem;
 }
 @media (min-width: 992px) {
@@ -870,7 +882,7 @@ main {
 }
 
 .sports {
-  background-color: #acacff;
+  background-color: #9292ff;
   border-radius: 0.3125em;
   display: flex;
   flex-wrap: wrap;
@@ -883,6 +895,7 @@ main {
 }
 .sports-link {
   display: inline-block;
+  width: 7em;
   padding: 0.625em;
   background: #010141;
   color: #fff;
@@ -890,7 +903,7 @@ main {
   transition: background ease-in-out 0.3s, color ease-in-out 0.3s, transform ease-in-out 0.3s;
 }
 .sports-link:hover {
-  background: #02028c;
+  background: #0303a5;
   border-radius: 0.3125em;
   transform: skewX(-5deg);
 }

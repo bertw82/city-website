@@ -9,16 +9,20 @@ caption {
 table {
   max-width: 95%;
   margin: 0 auto 2em;
-  border-radius: ems(10);
+  border-radius: ems(5);
   box-shadow: 0 ems(5) ems(3) ems(2);
-
+  color: rgb(34, 34, 34);
+  @include mq(med) {
+    width: 35em;
+  }
 }
 
 thead > tr {
-  background: rgb(136, 226, 230);
+  background: $color-table-blue;
 }
 
 th[scope="col"] {
+  background-color: $color-table-blue-dark;
   font-size: 1.125rem;
   @include mq(lg) {
     font-size: 1.3125rem;
@@ -39,7 +43,7 @@ td[colspan="3"] {
 
 tr {
   height: 3em;
-  background: rgb(223, 222, 222);
+  background: $color-table-grey;
   & > td {
     font-size: .8rem;
     padding: .3125em;

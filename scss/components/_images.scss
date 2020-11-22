@@ -6,11 +6,15 @@ img {
       margin-left: 0;
     }
   }
-  &[src^="../images/colts.jpg"] {
-    width: 75%;
+  &[src^="images/colts.jpg"] {
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.6);
+    @include mq(med) {
+    width: 60%;
     float: right;
     margin-left: ems(10);
-    @include mq(med) {
+    }
+    @include mq(lg) {
       width: 50%;
       margin-left: 1em;
     }
@@ -60,7 +64,7 @@ figcaption {
 .park-picture {
   position: relative;
   @include mq(med) {
-    max-width: 45em;
+    max-width: 40em;
     margin: 2em auto 0;
   }
 }
