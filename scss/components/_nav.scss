@@ -4,7 +4,9 @@
   a {
     display: block;
     transition: transform .2s, color .2s;
-    @include nav-font;
+    @include nav-font {
+      font-size: .9rem;
+    };
     @include mq(lg) {
       font-size: 1em;
     }
@@ -21,11 +23,11 @@
     padding-bottom: 1em;
     // flex-grow: 1;
     &:first-child {
-      display: none;
+      // display: none;
       @include nav-font;
-      @include mq(lg) {
-      font-size: 1em;
-    }
+      // @include mq(lg) {
+      // font-size: 1em;
+    // }
     }
     @include mq(med) {
       padding: 1em;

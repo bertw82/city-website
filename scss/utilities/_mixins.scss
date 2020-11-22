@@ -39,10 +39,10 @@ $sm: map-get($breakpoints, 'sm');
 
 // Navigaton font
 @mixin nav-font {
-  font-size: .9rem;
   font-family: $font-stack-secondary;
   font-weight: 600;
   text-transform: uppercase;
+  @content;
 }
 
 // Navigation styles
