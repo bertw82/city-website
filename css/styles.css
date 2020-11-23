@@ -356,11 +356,12 @@ h1 {
   margin-top: 0;
   color: #fff;
   text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
+  font-size: 2.4em;
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 3rem;
-    padding: 2.1em 1em 0 1em;
+    font-size: 3.2rem;
+    padding: 2.4em 1em 0 1em;
   }
 }
 @media (min-width: 992px) {
@@ -398,11 +399,10 @@ p {
   font-size: 2.5em;
   padding: 0.4375em 0.625em;
   margin: 0.125em 0.3125em 0 0;
-  background: #9292ff;
+  background: #acacff;
   color: #fff;
   line-height: 1;
   border-radius: 0.125em;
-  border: 1px solid rgba(1, 1, 65, 0.9);
 }
 @media (min-width: 768px) {
   .learn p {
@@ -446,7 +446,7 @@ a:active {
 }
 
 .banner {
-  height: 13em;
+  height: 15em;
   background: linear-gradient(#27a1ca, #0c0cbb), url("../images/city.jpg") no-repeat center/cover;
   background-blend-mode: soft-light;
   margin-top: 2.3125em;
@@ -455,7 +455,7 @@ a:active {
 @media (min-width: 768px) {
   .banner {
     margin-bottom: 1em;
-    height: 16em;
+    height: 18em;
   }
 }
 @media (min-width: 992px) {
@@ -471,15 +471,14 @@ a:active {
 }
 
 .racetrack {
-  height: 13em;
+  height: 15em;
   background: url("../images/parks.jpg") no-repeat center/cover;
-  padding: 0 16%;
   margin-top: 2.3125em;
 }
 @media (min-width: 768px) {
   .racetrack {
     margin-bottom: 1em;
-    height: 16em;
+    height: 18em;
     padding: 0;
   }
 }
@@ -495,15 +494,14 @@ a:active {
 }
 
 .mlk {
-  height: 13em;
+  height: 15em;
   margin-top: 2.3125em;
-  padding: 0 1em;
   background: linear-gradient(#ff4500, transparent 90%), linear-gradient(to right, #fff, transparent), orange url("../images/indy-500.jpg") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .mlk {
     margin-bottom: 1em;
-    height: 16em;
+    height: 18em;
   }
 }
 @media (min-width: 992px) {
@@ -518,15 +516,14 @@ a:active {
 }
 
 .hotels {
-  height: 13em;
+  height: 15em;
   margin-top: 2.3125em;
-  padding: 0 12%;
   background: linear-gradient(cyan, transparent), linear-gradient(225deg, magenta, transparent), linear-gradient(45deg, red, transparent), url("../images/skyline.jpg") no-repeat center/cover;
 }
 @media (min-width: 768px) {
   .hotels {
     margin-bottom: 1em;
-    height: 16em;
+    height: 18em;
     padding: 0;
   }
 }
@@ -542,8 +539,8 @@ a:active {
 }
 
 .brochure {
-  height: 13em;
-  background: radial-gradient(rgba(252, 252, 3, 0.5), rgba(58, 58, 255, 0.5)), url("../images/bridge.jpg") no-repeat center/cover;
+  height: 15em;
+  background: radial-gradient(rgba(223, 223, 0, 0.5), rgba(58, 58, 255, 0.5)), url("../images/bridge.jpg") no-repeat center/cover;
   background-blend-mode: lighten;
   padding-right: 1em;
   padding-left: 1em;
@@ -552,7 +549,7 @@ a:active {
 @media (min-width: 768px) {
   .brochure {
     margin-bottom: 1em;
-    height: 16em;
+    height: 18em;
   }
 }
 @media (min-width: 992px) {
@@ -807,7 +804,6 @@ tr:nth-child(2n+2) {
 
 .main-nav {
   display: flex;
-  justify-content: space-around;
   background-color: #010141;
   position: fixed;
   padding: 0;
@@ -820,6 +816,7 @@ tr:nth-child(2n+2) {
 @media (min-width: 576px) {
   .main-nav {
     height: 3.625em;
+    justify-content: space-around;
   }
 }
 .main-nav a {
@@ -908,6 +905,7 @@ tr:nth-child(2n+2) {
 
 .main-nav span {
   margin-top: 5px;
+  margin-left: 10px;
 }
 @media (min-width: 576px) {
   .main-nav span {
@@ -935,7 +933,7 @@ main {
 }
 
 .sports {
-  background-color: #9292ff;
+  background-color: #acacff;
   border-radius: 0.3125em;
   display: flex;
   flex-wrap: wrap;
@@ -977,6 +975,30 @@ main {
 
 .gallery-div {
   margin-top: 1em;
+}
+
+.aside-know {
+  background: #414101;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .aside-know {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+.aside-know ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .article-aside {
+    display: flex;
+  }
 }
 
 .main-footer {

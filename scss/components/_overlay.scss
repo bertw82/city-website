@@ -44,6 +44,7 @@
 
 .main-nav span {
   margin-top: 5px;
+  margin-left: 10px;
   @include mq(sm) {
     display: none;
   }

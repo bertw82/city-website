@@ -53,6 +53,29 @@ main {
   margin-top: 1em;
 }
 
+.aside-know {
+  background: $complement;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: $white;
+  @include mq(med) {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  ul {
+    text-align: left;
+    padding-left: 20px
+  }
+}
+
+.article-aside {
+  @include mq(med) {
+    @include flexy;
+  }
+  
+}
+
 
 
 

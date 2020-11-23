@@ -1,10 +1,12 @@
 .main-nav {
-  @include flexy($just: space-around);
+  // @include flexy($just: space-around);
+  @include flexy;
   @include nav-style {
     height: 3.125em;
   };
   @include mq(sm) {
     height: 3.625em;
+    justify-content: space-around;
   }
   a {
     display: block;
@@ -56,11 +58,6 @@
   }
 }
 
-// #mobileNav li {
-//   @include mq(med) {
-//     display: none;
-//   }
-// }
 
 
 
