@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <title>Indy Info</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
@@ -33,42 +34,60 @@
           <li><a href="hotels.html">Stay</a></li>
           <li><a href="subscribe.html">Photos</a></li>
         </ul>
-      </nav>    
+      </nav>   
+      <div class="brochure">
+        <h1>Photo Gallery</h1>
+      </div> 
     </header>
-
-    <div class="brochure">
-      <h1>Photo Gallery</h1>
-    </div>
-    
+   
   <main class="gallery-div">
       <h2>Photo Gallery</h2>
+      <p><i>(Click on an image to open the lightbox gallery)</i></p>
       <div class="photo-gallery">
         <div>
-          <img src="images/gallery-images/gallery-1.jpg" alt="Downtown Indianapolis">
+          <a href="images/gallery-images/gallery-1.jpg" data-caption="Downtown Indianapolis Skyline">
+            <img src="images/gallery-images/gallery-1-thumbnail.jpg" alt="Downtown Indianapolis">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-2.jpg" alt="Bridge a night">
+          <a href="images/gallery-images/gallery-2.jpg" data-caption="Bridge over the downtown canal">
+            <img src="images/gallery-images/gallery-2-thumbnail.jpg" alt="Bridge a night">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-3.jpg" alt="Street sign">
+          <a href="images/gallery-images/gallery-3.jpg" data-caption="Street sign on the Cultural Trail">
+            <img src="images/gallery-images/gallery-3-thumbnail.jpg" alt="Street sign">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-4.jpg" alt="Flowers">
+          <a href="images/gallery-images/gallery-4.jpg" data-caption="Flowers at Pogues Run">
+            <img src="images/gallery-images/gallery-4-thumbnail.jpg" alt="Flowers">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-5.jpg" alt="Mural containing birds">
+          <a href="images/gallery-images/gallery-5.jpg" data-caption="Mural in Library Square">
+            <img src="images/gallery-images/gallery-5-thumbnail.jpg" alt="Mural containing birds">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-6.jpg" alt="Church and steeples">
+          <a href="images/gallery-images/gallery-6.jpg" data-caption="Downtown Indianapolis Church">
+            <img src="images/gallery-images/gallery-6-thumbnail.jpg" alt="Church and steeples">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-7.jpg" alt="Red Line stop at night">
+          <a href="images/gallery-images/gallery-7.jpg" data-caption="Red Line Rapid Transit stop">
+            <img src="images/gallery-images/gallery-7-thumbnail.jpg" alt="Red Line stop at night">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-8.jpg" alt="Central Library in Indianapolis">
+          <a href="images/gallery-images/gallery-8.jpg" data-caption="Central Library of Indianapolis">
+            <img src="images/gallery-images/gallery-8-thumbnail.jpg" alt="Central Library in Indianapolis">
+          </a>
         </div>
         <div>
-          <img src="images/gallery-images/gallery-9.jpg" alt="Indiana flag in front of Circle building">
+          <a href="images/gallery-images/gallery-9.jpg" data-caption="Indiana State flag in front of the Circle Building">
+            <img src="images/gallery-images/gallery-9-thumbnail.jpg" alt="Indiana flag in front of Circle building">
+          </a>
         </div>
     </div> 
      
@@ -90,6 +109,7 @@
     <p>&copy;2020 Bert Witzel</p>
     <p><a href="subscribe.html">Back to Top</a></p>
   </footer>
+  <script src="js/baguetteBox.min.js"></script>
   <script src="js/app.js"></script>
   </body>
 </html>

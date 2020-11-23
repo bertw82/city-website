@@ -5,3 +5,5 @@ function openNav() {
 function closeNav() {
   document.getElementById("mobileNav").style.width = "0%";
 }
+
+baguetteBox.run('.photo-gallery');
