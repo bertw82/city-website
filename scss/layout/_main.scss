@@ -8,11 +8,11 @@ main {
   margin: 2em auto 0;
   @include mq(med) {
     max-width: 40em;
+    flex-basis: 85em;
   }
 }
 
 .sports {
-  // background-color:rgb(230, 230, 230);
   background-color: $color-bg-dark;
   border-radius: ems(5);
   @include flexy($wrap: wrap);

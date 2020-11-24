@@ -20,16 +20,26 @@ h1 {
   font-size: 2.4em;
   @include mq(med) { 
       font-size: 3.2rem;
-      padding: 2.4em 1em 0 1em;
+      padding: 2.4em 0 2.4em 0;
   }
   @include mq(lg) {
     font-size: 4.2rem;
   }
   @include mq(x-lg) {
-    font-size: 5.2rem;
+    font-size: 5rem;
   }
   .brochure & {
     padding: 1.9em 1.6em 0 1.6em;
+    @include mq(med) { 
+      font-size: 3.2rem;
+      padding: 2.4em 1em 0 1em;
+    }
+    @include mq(lg) {
+      font-size: 4.2rem;
+    }
+    @include mq(x-lg) {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -98,6 +108,10 @@ a {
   }
   .indy-flex-1 & {
     color: $color-primary;
+  }
+  .tips p & {
+    color: $color-primary-light;
+    text-decoration: underline;
   }
 }
 
