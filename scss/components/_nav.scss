@@ -4,7 +4,7 @@
   @include nav-style {
     height: 3.125em;
   };
-  @include mq(sm) {
+  @include mq(med) {
     height: 3.625em;
     justify-content: space-around;
   }
@@ -53,7 +53,7 @@
 
 #mainNav li {
   display: none;
-  @include mq(sm) {
+  @include mq(med) {
     display: initial;
   }
 }

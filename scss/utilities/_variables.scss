@@ -1,7 +1,7 @@
 // Colors
 $white: #fff;
 $color-primary: rgb(1, 1, 65);
-$color-primary-light: lighten($color-primary, 20%);
+$color-primary-light: lighten($color-primary, 25%);
 $color-bg: #f8f8ff;
 $color-bg-dark: darken($color-bg, 15%);
 $color-hover: rgb(196, 183, 255);
@@ -28,8 +28,8 @@ $bg-xl-height: 28em;
 
 //Sass Maps
 $breakpoints: (
-  'xs': 575px,
-  'sm': 576px,
+  'xs': 600px,
+  'sm': 601px,
   'med': 768px,
   'lg': 992px,  
   'x-lg': 1200px,

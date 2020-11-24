@@ -4,10 +4,12 @@ caption {
   font-size: 1.3125rem;
   font-weight: 600;
   padding: .9em;
+  @include mq(lg) {
+    font-size: 2rem;
+  }
 }
 
 table {
-  max-width: 95%;
   margin: 0 auto 2em;
   border-radius: ems(5);
   box-shadow: 0 ems(5) ems(3) ems(2);

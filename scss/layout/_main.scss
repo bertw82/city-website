@@ -29,6 +29,7 @@ main {
     background: $color-primary;
     color: $white;
     border-radius: ems(5);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.6);
     transition: background ease-in-out .3s, color ease-in-out .3s, 
                 transform ease-in-out .3s;
     &:hover {
@@ -54,13 +55,13 @@ main {
 }
 
 .aside-know {
-  background: $complement;
+  background: darkcyan;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   color: $white;
   @include mq(med) {
-    margin-top: 20px;
+    margin-top: 54px;
     margin-left: 20px;
   }
   ul {

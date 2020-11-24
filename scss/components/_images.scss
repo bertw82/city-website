@@ -19,10 +19,14 @@ img {
       margin-left: 1em;
     }
   }
-  &[src^="../images/svg-images"] {
-    transition: all .4s; 
-    &:hover {
-      transform: scale(1.3) rotate(360deg);
+  &[src$="thumbnail.jpg"] {
+    width: 280px;
+  }
+  &[src^="images/city-hall.jpg"] {
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.6);
+    @include mq(lg) {
+      width: 75%;
     }
   }
 }
@@ -54,22 +58,7 @@ img {
   }
 }
 
-.photo-gallery {
-  @include mq(med) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: ems(20);
-  }
-  @include mq(lg) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  div {
-    margin-bottom: 1em;
-    @include mq(med) {
-      margin-bottom: 0;
-    }
-  }
-}
+
 
 
   
