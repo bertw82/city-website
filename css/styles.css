@@ -669,10 +669,11 @@ a:active {
   }
 }
 
-/*.tab > input:not(:focus) ~ .tab-content { 
-	max-height: 0;
-	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
-}*/
+.tab > input:not(:focus) ~ .tab-content {
+  max-height: 0;
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
+}
+
 img {
   width: 100%;
 }
