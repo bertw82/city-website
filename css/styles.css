@@ -662,16 +662,12 @@ a:active {
 /* open the tab when label is checked */
 .tab input:checked ~ .tab-content {
   max-height: 14.25em;
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
 }
 @media (min-width: 768px) {
   .tab input:checked ~ .tab-content {
-    max-height: 6.25em;
+    max-height: 8em;
   }
-}
-
-.tab > input:not(:focus) ~ .tab-content {
-  max-height: 0;
-  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
 }
 
 img {
