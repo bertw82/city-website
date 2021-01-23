@@ -56,15 +56,12 @@
 
 .tab input:checked ~ .tab-content { 
 	max-height: 14.25em;
+	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
 	@include mq(med) {
-		max-height: 6.25em;
+		max-height: 8em;
 	}
 }
 
-.tab > input:not(:focus) ~ .tab-content { 
-	max-height: 0;
-	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
-}
 
 
 
